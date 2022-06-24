@@ -18,7 +18,7 @@ const Navbar = () => {
 		<div className="fixed w-full h-20 shadow-xl z-[100]">
 			<div className="flex justify-between items-center w-full h-full px-7 2xl:px-16">
 				<Image
-					src="/../public/assets/logo.png"
+					src="/assets/logo.png"
 					alt="Jimmy Zhang's Logo"
 					width="130"
 					height="65"
@@ -78,12 +78,7 @@ const Navbar = () => {
 				>
 					<div>
 						<div className="flex w-full items-center justify-between">
-							<Image
-								src="/../public/assets/logo.png"
-								width="100"
-								height="55"
-								alt=""
-							/>
+							<Image src="/assets/logo.png" width="100" height="55" alt="" />
 							<div
 								onClick={handleNav}
 								className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
