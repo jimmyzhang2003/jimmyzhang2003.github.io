@@ -8,8 +8,13 @@
 		font-family: Poppins, sans-serif;
 	}
 
+	/*
 	body {
 		@apply bg-[#f0f3f5] text-[#1a2431] tracking-wide;
+	}
+    */
+	body {
+		@apply tracking-wide;
 	}
 
 	h1,
@@ -33,7 +38,9 @@
 		@apply cursor-pointer;
 	}
 
+	/* 
 	button {
 		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[purple] text-white;
 	}
+    */
 }

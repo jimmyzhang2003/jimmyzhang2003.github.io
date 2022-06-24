@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { BsFillSunFill, BSFillMoonFill, BsFillMoonFill } from "react-icons/bs";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
+	const { theme, setTheme } = useTheme();
 
 	const handleNav = () => {
 		setNav(!nav);
@@ -17,10 +20,21 @@ const Navbar = () => {
 				<Image
 					src="/../public/assets/logo.png"
 					alt="Jimmy Zhang's Logo"
-					width="125"
-					height="60"
+					width="130"
+					height="65"
 				/>
-				<div>
+				<div className="flex">
+					<div
+						aria-label="Toggle Dark Mode"
+						className="mr-5 hover:border-b-4 cursor-pointer hover:scale-110 ease-in duration-300"
+						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+					>
+						{theme === "dark" ? (
+							<BsFillSunFill size={27} color="#f5bd1f" />
+						) : (
+							<BsFillMoonFill size={27} color="#f5bd1f" />
+						)}
+					</div>
 					<ul className="hidden md:flex">
 						<Link href="/">
 							<li className="ml-10 text-lg uppercase hover:border-b-4">Home</li>
@@ -56,7 +70,9 @@ const Navbar = () => {
 				<div
 					className={
 						nav
-							? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#eaf9fc] p-10 ease-in duration-500"
+							? theme === "dark"
+								? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-black h-screen p-10 ease-in duration-500"
+								: "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-white h-screen p-10 ease-in duration-500"
 							: "fixed left-[-200%] top-0 p-10 ease-in duration-500"
 					}
 				>
@@ -65,7 +81,7 @@ const Navbar = () => {
 							<Image
 								src="/../public/assets/logo.png"
 								width="100"
-								height="50"
+								height="55"
 								alt=""
 							/>
 							<div
