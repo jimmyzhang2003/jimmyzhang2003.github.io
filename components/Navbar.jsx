@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillSunFill, BSFillMoonFill, BsFillMoonFill } from "react-icons/bs";
+import { IoIosPaper } from "react-icons/io";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
@@ -15,18 +16,21 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="fixed w-full h-20 shadow-xl z-[100]">
+		<div className="w-full h-20 shadow-xl z-[100]">
 			<div className="flex justify-between items-center w-full h-full px-7 2xl:px-16">
-				<Image
-					src="/assets/logo.png"
-					alt="Jimmy Zhang's Logo"
-					width="130"
-					height="65"
-				/>
+				<Link href="/">
+					<Image
+						src="/assets/logo.png"
+						alt="Jimmy Zhang's Logo"
+						width="130"
+						height="65"
+						className="cursor-pointer"
+					/>
+				</Link>
 				<div className="flex">
 					<div
 						aria-label="Toggle Dark Mode"
-						className="mr-5 hover:border-b-4 cursor-pointer hover:scale-110 ease-in duration-300"
+						className="mr-8 hover:border-b-4 cursor-pointer hover:scale-110 ease-in duration-300"
 						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 					>
 						{theme === "dark" ? (
@@ -37,20 +41,25 @@ const Navbar = () => {
 					</div>
 					<ul className="hidden md:flex">
 						<Link href="/">
-							<li className="ml-10 text-lg uppercase hover:border-b-4">Home</li>
+							<li className="text-md uppercase hover:border-b-4">Home</li>
 						</Link>
 						<Link href="/">
-							<li className="ml-10 text-lg uppercase hover:border-b-4">
+							<li className="ml-8 text-md uppercase hover:border-b-4">
 								About Me
 							</li>
 						</Link>
 						<Link href="/">
-							<li className="ml-10 text-lg uppercase hover:border-b-4">
+							<li className="ml-8 text-md uppercase hover:border-b-4">
 								Projects
 							</li>
 						</Link>
+						<Link href="/assets/resume.pdf">
+							<li className="ml-8 text-md uppercase hover:border-b-4">
+								Resume
+							</li>
+						</Link>
 						<Link href="/">
-							<li className="ml-10 text-lg uppercase hover:border-b-4">
+							<li className="ml-8 text-md uppercase hover:border-b-4">
 								Contact
 							</li>
 						</Link>
@@ -71,14 +80,22 @@ const Navbar = () => {
 					className={
 						nav
 							? theme === "dark"
-								? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-black h-screen p-10 ease-in duration-500"
-								: "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-white h-screen p-10 ease-in duration-500"
+								? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-[#282828] h-screen z-[100] p-10 ease-in duration-500"
+								: "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-[#f5f5f5] h-screen z-[100] p-10 ease-in duration-500"
 							: "fixed left-[-200%] top-0 p-10 ease-in duration-500"
 					}
 				>
 					<div>
 						<div className="flex w-full items-center justify-between">
-							<Image src="/assets/logo.png" width="100" height="55" alt="" />
+							<Link href="/">
+								<Image
+									src="/assets/logo.png"
+									width="100"
+									height="55"
+									alt="Jimmy Zhang's Logo"
+									className="cursor-pointer"
+								/>
+							</Link>
 							<div
 								onClick={handleNav}
 								className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
@@ -93,23 +110,26 @@ const Navbar = () => {
 							</p>
 						</div>
 
-						<div className="py-4 flex-col">
+						<div className="py-3 flex-col">
 							<ul className="uppercase">
 								<Link href="/">
-									<li className="py-4 text-md">Home</li>
+									<li className="py-3 text-md hover:border-b-4">Home</li>
 								</Link>
 								<Link href="/">
-									<li className="py-4 text-md">About Me</li>
+									<li className="py-3 text-md hover:border-b-4">About Me</li>
 								</Link>
 								<Link href="/">
-									<li className="py-4 text-md">Projects</li>
+									<li className="py-3 text-md hover:border-b-4">Projects</li>
+								</Link>
+								<Link href="/assets/resume.pdf">
+									<li className="py-3 text-md hover:border-b-4">Resume</li>
 								</Link>
 								<Link href="/">
-									<li className="py-4 text-md">Contact</li>
+									<li className="py-3 text-md hover:border-b-4">Contact</li>
 								</Link>
 							</ul>
 
-							<div className="pt-24">
+							<div className="pt-16">
 								<p className="uppercase tracking-widest text-[#ff00ff]">
 									Connect with me
 								</p>
@@ -137,6 +157,12 @@ const Navbar = () => {
 									<div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
 										<AiOutlineMail />
 									</div>
+
+									<Link href="/assets/resume.pdf">
+										<div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+											<IoIosPaper />
+										</div>
+									</Link>
 								</div>
 							</div>
 						</div>
