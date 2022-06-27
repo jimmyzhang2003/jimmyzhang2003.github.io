@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
@@ -6,9 +6,85 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 
 const Hero = () => {
+	const [selected, setSelected] = useState("Home");
+
 	return (
 		<div className="w-full h-screen text-center">
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-wrap md:flex-nowrap justify-center items-center">
+				<ul className="hidden fixed xl:flex flex-col left-0 top-56 ml-3">
+					<li>
+						<p>{selected}</p>
+					</li>
+					<li className="bg-red-50">
+						<Link href="/">
+							<div
+								onClick={() => setSelected("Home")}
+								className={
+									selected === "Home"
+										? "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3 bg-purple-800"
+										: "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3"
+								}
+							></div>
+						</Link>
+						<div>
+							<span className="px-2 py-1 rounded-md ml-10 opacity-100">
+								Home
+							</span>
+						</div>
+					</li>
+					<li className="bg-red-50">
+						<Link href="/">
+							<div
+								onClick={() => setSelected("About Me")}
+								className={
+									selected === "About Me"
+										? "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3 bg-purple-800"
+										: "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3"
+								}
+							></div>
+						</Link>
+						<div>
+							<span className="px-2 py-1 rounded-md ml-10 opacity-100">
+								About Me
+							</span>
+						</div>
+					</li>
+					<li className="bg-red-50">
+						<Link href="/">
+							<div
+								onClick={() => setSelected("Projects")}
+								className={
+									selected === "Projects"
+										? "rounded-full border-4 border-green-500 first-letter:cursor-pointer p-3 m-3 h-3 w-3 bg-purple-800"
+										: "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3"
+								}
+							></div>
+						</Link>
+						<div>
+							<span className="px-2 py-1 rounded-md ml-10 opacity-100">
+								Projects
+							</span>
+						</div>
+					</li>
+					<li className="bg-red-50">
+						<Link href="/">
+							<div
+								onClick={() => setSelected("Contact")}
+								className={
+									selected === "Contact"
+										? "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3 bg-purple-800"
+										: "rounded-full border-4 border-green-500 cursor-pointer p-3 m-3 h-3 w-3"
+								}
+							></div>
+						</Link>
+						<div>
+							<span className="px-2 py-1 rounded-md ml-10 opacity-100">
+								Contact
+							</span>
+						</div>
+					</li>
+				</ul>
+
 				<div>
 					<p className="uppercase text-md tracking-widest text-gray-400">
 						Researcher
