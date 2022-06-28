@@ -37,18 +37,16 @@ const Sidebar = ({ hero, about }) => {
 
 	return (
 		<div>
+			{/*
 			<p className="fixed top-20 left-0">{scrollPosition}</p>
-			<p className="fixed top-20 left-20">
-				{Math.abs(hero.current?.offsetTop - scrollPosition)}
-			</p>
-			<p className="fixed top-20 left-36">
-				{Math.abs(about.current?.offsetTop - scrollPosition)}
-			</p>
-			<ul className="hidden fixed xl:flex flex-col left-0 top-56 ml-3">
+			<p className="fixed top-20 left-20"> {Math.abs(hero.current?.offsetTop - scrollPosition)} </p>
+			<p className="fixed top-20 left-36"> {Math.abs(about.current?.offsetTop - scrollPosition)} </p> 
+            */}
+			<ul className="hidden fixed xl:flex flex-col left-0 top-48 px-8">
 				<li>
 					<p>{selected}</p>
 				</li>
-				<li className="bg-red-50">
+				<li>
 					<Link href="/">
 						<div
 							onClick={() => setTimeout(() => setSelected("Home"), 1000)}
@@ -63,7 +61,7 @@ const Sidebar = ({ hero, about }) => {
 						<span className="px-2 py-1 rounded-md ml-10 opacity-100">Home</span>
 					</div>
 				</li>
-				<li className="bg-red-50">
+				<li>
 					<Link href="/#about">
 						<div
 							onClick={() => setTimeout(() => setSelected("About Me"), 1000)}
@@ -80,7 +78,7 @@ const Sidebar = ({ hero, about }) => {
 						</span>
 					</div>
 				</li>
-				<li className="bg-red-50">
+				<li>
 					<Link href="/#projects">
 						<div
 							onClick={() => setTimeout(() => setSelected("Projects"), 1000)}
@@ -97,7 +95,7 @@ const Sidebar = ({ hero, about }) => {
 						</span>
 					</div>
 				</li>
-				<li className="">
+				<li>
 					<Link href="/#contact">
 						<div
 							onClick={() => setTimeout(() => setSelected("Contact"), 1000)}

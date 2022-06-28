@@ -23,7 +23,7 @@ const Hero = (props, ref) => {
 						Lifelong Learner
 					</p>
 					<h1 className="py-2 px-3">
-						Hey there, I&apos;m <span className="text-[#b903de]">Jimmy</span>
+						Hi there, I&apos;m <span className="text-[#b903de]">Jimmy</span>
 					</h1>
 					<div className="flex items-center justify-between max-w-[350px] m-auto py-4">
 						<a
