@@ -1,10 +1,15 @@
+import { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 import About from "../components/About";
 
 export default function Home() {
+	const heroRef = useRef(null);
+	const aboutRef = useRef(null);
+
 	return (
 		<div>
 			<Head>
@@ -15,9 +20,11 @@ export default function Home() {
 
 			<Navbar />
 
-			<Hero />
+			<Sidebar hero={heroRef} about={aboutRef} />
 
-			<About />
+			<Hero ref={heroRef} />
+
+			<About ref={aboutRef} />
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -9,14 +9,31 @@ import { IoIosPaper } from "react-icons/io";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
+	const [shadow, setShadow] = useState(false);
 	const { theme, setTheme } = useTheme();
 
 	const handleNav = () => {
 		setNav(!nav);
 	};
 
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.scrollY >= 90) {
+				setShadow(true);
+			} else {
+				setShadow(false);
+			}
+		});
+	}, []);
+
 	return (
-		<div className="w-full h-20 shadow-xl z-[100]">
+		<div
+			className={
+				shadow
+					? "fixed w-full h-20 shadow-xl z-[100]"
+					: "fixed w-full h-20 z-[100]"
+			}
+		>
 			<div className="flex justify-between items-center w-full h-full px-7 2xl:px-16">
 				<Link href="/">
 					<Image
@@ -43,12 +60,12 @@ const Navbar = () => {
 						<Link href="/">
 							<li className="text-md uppercase hover:border-b-4">Home</li>
 						</Link>
-						<Link href="/">
+						<Link href="/#about">
 							<li className="ml-8 text-md uppercase hover:border-b-4">
 								About Me
 							</li>
 						</Link>
-						<Link href="/">
+						<Link href="/#projects">
 							<li className="ml-8 text-md uppercase hover:border-b-4">
 								Projects
 							</li>
@@ -58,7 +75,7 @@ const Navbar = () => {
 								Resume
 							</li>
 						</Link>
-						<Link href="/">
+						<Link href="/#contact">
 							<li className="ml-8 text-md uppercase hover:border-b-4">
 								Contact
 							</li>
@@ -115,16 +132,16 @@ const Navbar = () => {
 								<Link href="/">
 									<li className="py-3 text-md hover:border-b-4">Home</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#about">
 									<li className="py-3 text-md hover:border-b-4">About Me</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#projects">
 									<li className="py-3 text-md hover:border-b-4">Projects</li>
 								</Link>
 								<Link href="/assets/resume.pdf">
 									<li className="py-3 text-md hover:border-b-4">Resume</li>
 								</Link>
-								<Link href="/">
+								<Link href="/#contact">
 									<li className="py-3 text-md hover:border-b-4">Contact</li>
 								</Link>
 							</ul>
