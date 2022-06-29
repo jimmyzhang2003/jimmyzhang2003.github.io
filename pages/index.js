@@ -5,10 +5,14 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import About from "../components/About";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
 	const heroRef = useRef(null);
 	const aboutRef = useRef(null);
+	const projectsRef = useRef(null);
+	const contactRef = useRef(null);
 
 	return (
 		<div>
@@ -20,11 +24,20 @@ export default function Home() {
 
 			<Navbar />
 
-			<Sidebar hero={heroRef} about={aboutRef} />
+			<Sidebar
+				hero={heroRef}
+				about={aboutRef}
+				projects={projectsRef}
+				contact={contactRef}
+			/>
 
 			<Hero ref={heroRef} />
 
 			<About ref={aboutRef} />
+
+			<Projects ref={projectsRef} />
+
+			<Contact ref={contactRef} />
 		</div>
 	);
 }

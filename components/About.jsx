@@ -8,10 +8,7 @@ const About = (props, ref) => {
 			ref={ref}
 			className="w-full md:h-full p-2 flex items-center py-8 xl:px-24"
 		>
-			<div
-				ref={ref}
-				className="max-w-[1240px] mx-auto pt-28 md:pt-0 md:grid grid-cols-3 gap-8"
-			>
+			<div className="max-w-[1240px] mx-auto pt-28 md:pt-0 md:grid grid-cols-3 gap-8">
 				<div className="col-span-2">
 					<h2 className="uppercase text-4xl mb-4 tracking-widest text-indigo-600">
 						About Me

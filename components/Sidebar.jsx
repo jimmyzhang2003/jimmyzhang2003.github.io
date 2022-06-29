@@ -1,20 +1,30 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-const Sidebar = ({ hero, about }) => {
+const Sidebar = ({ hero, about, projects, contact }) => {
 	const [selected, setSelected] = useState("Home");
 	const [heroPosition, setHeroPosition] = useState(hero.current?.offSetTop);
 	const [aboutPosition, setAboutPosition] = useState(about.current?.offSetTop);
+	const [projectsPosition, setProjectsPosition] = useState(
+		projects.current?.offSetTop
+	);
+	const [contactPosition, setContactPosition] = useState(
+		contact.current?.offSetTop
+	);
 	const [scrollPosition, setScrollPosition] = useState(0);
 
 	const handleScroll = () => {
 		const scrollPos = window.scrollY;
 		const heroPos = hero.current?.offsetTop - scrollPosition;
 		const aboutPos = about.current?.offsetTop - scrollPosition;
+		const projectsPos = projects.current?.offsetTop - scrollPosition;
+		const contactPos = contact.current?.offsetTop - scrollPosition;
 
 		setScrollPosition(scrollPos);
 		setHeroPosition(heroPos);
 		setAboutPosition(aboutPos);
+		setProjectsPosition(projectsPos);
+		setContactPosition(contactPos);
 	};
 
 	useEffect(() => {
@@ -26,14 +36,23 @@ const Sidebar = ({ hero, about }) => {
 	});
 
 	useEffect(() => {
-		const posList = [heroPosition, aboutPosition].map((pos) => Math.abs(pos));
+		const posList = [
+			heroPosition,
+			aboutPosition,
+			projectsPosition,
+			contactPosition,
+		].map((pos) => Math.abs(pos));
 
 		if (Math.min(...posList) === Math.abs(heroPosition)) {
 			setSelected("Home");
 		} else if (Math.min(...posList) === Math.abs(aboutPosition)) {
 			setSelected("About Me");
+		} else if (Math.min(...posList) === Math.abs(projectsPosition)) {
+			setSelected("Projects");
+		} else if (Math.min(...posList) === Math.abs(contactPosition)) {
+			setSelected("Contact");
 		}
-	}, [aboutPosition, heroPosition]);
+	}, [aboutPosition, heroPosition, projectsPosition, contactPosition]);
 
 	return (
 		<div>
