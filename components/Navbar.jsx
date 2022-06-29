@@ -37,9 +37,9 @@ const Navbar = () => {
 			<div className="flex justify-between items-center w-full h-full px-7 2xl:px-16">
 				<Link href="/">
 					<Image
-						src="/assets/logo.png"
+						src="/assets/logo-modified.png"
 						alt="Jimmy Zhang's Logo"
-						width="130"
+						width="65"
 						height="65"
 						className="cursor-pointer"
 					/>
@@ -106,9 +106,9 @@ const Navbar = () => {
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
 								<Image
-									src="/assets/logo.png"
-									width="100"
-									height="55"
+									src="/assets/logo-modified.png"
+									width="65"
+									height="65"
 									alt="Jimmy Zhang's Logo"
 									className="cursor-pointer"
 								/>
