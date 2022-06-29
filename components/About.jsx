@@ -6,7 +6,7 @@ const About = (props, ref) => {
 		<div
 			id="about"
 			ref={ref}
-			className="w-full md:h-full p-2 flex items-center py-8 xl:px-24"
+			className="w-full md:h-full p-3 flex items-center py-8 xl:px-28"
 		>
 			<div className="max-w-[1240px] mx-auto pt-28 md:pt-0 md:grid grid-cols-3 gap-8">
 				<div className="col-span-2">
