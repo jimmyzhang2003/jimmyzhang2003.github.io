@@ -72,7 +72,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 				{/*<li>
 					<p>{selected}</p>
                 </li>*/}
-				<li className="flex items-center">
+				<li className="flex items-center cursor-default">
 					<Link href="/">
 						<div
 							onClick={() => setTimeout(() => setSelected("Home"), 1000)}
@@ -97,7 +97,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 						</span>
 					</div>
 				</li>
-				<li className="flex items-center">
+				<li className="flex items-center cursor-default">
 					<Link href="/#about">
 						<div
 							onClick={() => setTimeout(() => setSelected("About Me"), 1000)}
@@ -122,7 +122,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 						</span>
 					</div>
 				</li>
-				<li className="flex items-center">
+				<li className="flex items-center cursor-default">
 					<Link href="/#projects">
 						<div
 							onClick={() => setTimeout(() => setSelected("Projects"), 1000)}
@@ -147,7 +147,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 						</span>
 					</div>
 				</li>
-				<li className="flex items-center">
+				<li className="flex items-center cursor-default">
 					<Link href="/#contact">
 						<div
 							onClick={() => setTimeout(() => setSelected("Contact"), 1000)}

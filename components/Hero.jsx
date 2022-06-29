@@ -7,7 +7,7 @@ import { IoIosPaper } from "react-icons/io";
 
 const Hero = (props, ref) => {
 	return (
-		<div ref={ref} id="hero" className="w-full h-screen text-center">
+		<div ref={ref} id="hero" className="w-full h-full md:h-screen text-center">
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 xl:pl-10 flex flex-wrap md:flex-nowrap justify-center items-center">
 				<div className="mt-24 md:mt-0">
 					<p className="uppercase text-md tracking-widest text-gray-400">

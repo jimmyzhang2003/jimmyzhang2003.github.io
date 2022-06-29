@@ -30,8 +30,12 @@ const Navbar = () => {
 		<div
 			className={
 				shadow
-					? "fixed w-full h-20 shadow-xl z-[100]"
-					: "fixed w-full h-20 z-[100]"
+					? theme === "dark"
+						? "fixed w-full h-20 shadow-xl bg-[#171717] z-[100]"
+						: "fixed w-full h-20 shadow-xl bg-white z-[100]"
+					: theme === "dark"
+					? "fixed w-full h-20 bg-[#171717] z-[100]"
+					: "fixed w-full h-20 bg-white z-[100]"
 			}
 		>
 			<div className="flex justify-between items-center w-full h-full px-7 2xl:px-16">
@@ -130,19 +134,44 @@ const Navbar = () => {
 						<div className="py-3 flex-col">
 							<ul className="uppercase">
 								<Link href="/">
-									<li className="py-3 text-md hover:border-b-4">Home</li>
+									<li
+										onClick={() => setNav(false)}
+										className="py-3 text-md hover:border-b-4"
+									>
+										Home
+									</li>
 								</Link>
 								<Link href="/#about">
-									<li className="py-3 text-md hover:border-b-4">About Me</li>
+									<li
+										onClick={() => setNav(false)}
+										className="py-3 text-md hover:border-b-4"
+									>
+										About Me
+									</li>
 								</Link>
 								<Link href="/#projects">
-									<li className="py-3 text-md hover:border-b-4">Projects</li>
+									<li
+										onClick={() => setNav(false)}
+										className="py-3 text-md hover:border-b-4"
+									>
+										Projects
+									</li>
 								</Link>
 								<Link href="/assets/resume.pdf">
-									<li className="py-3 text-md hover:border-b-4">Resume</li>
+									<li
+										onClick={() => setNav(false)}
+										className="py-3 text-md hover:border-b-4"
+									>
+										Resume
+									</li>
 								</Link>
 								<Link href="/#contact">
-									<li className="py-3 text-md hover:border-b-4">Contact</li>
+									<li
+										onClick={() => setNav(false)}
+										className="py-3 text-md hover:border-b-4"
+									>
+										Contact
+									</li>
 								</Link>
 							</ul>
 
