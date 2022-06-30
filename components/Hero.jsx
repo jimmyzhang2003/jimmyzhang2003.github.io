@@ -66,6 +66,7 @@ const Hero = (props, ref) => {
 						alt="Picture of Jimmy"
 						width="450px"
 						height="450px"
+						className="rounded-full"
 					/>
 				</div>
 			</div>
