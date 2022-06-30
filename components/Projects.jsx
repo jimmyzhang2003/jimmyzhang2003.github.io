@@ -8,7 +8,9 @@ const Projects = (props, ref) => {
 					Projects
 				</h2>
 
-				<div></div>
+				<div>
+					<p>In progress</p>
+				</div>
 			</div>
 		</div>
 	);
