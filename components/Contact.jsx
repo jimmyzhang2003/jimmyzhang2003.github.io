@@ -39,13 +39,15 @@ const Contact = (props, ref) => {
 
 					<div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
 						<div className="p-4">
-							<form>
+							<form action="https://formspree.io/f/meqnwdyr" method="POST">
 								<div className="grid md:grid-cols-2 gap-4 w-full py-2">
 									<div className="flex flex-col">
 										<label className="uppercase text-lg py-2">Name</label>
 										<input
+											name="name"
 											className="border-2 rounded-lg p-3 flex border-gray-300"
 											type="text"
+											required
 										/>
 									</div>
 
@@ -54,6 +56,7 @@ const Contact = (props, ref) => {
 											Phone Number
 										</label>
 										<input
+											name="phone"
 											className="border-2 rounded-lg p-3 flex border-gray-300"
 											type="text"
 										/>
@@ -63,16 +66,20 @@ const Contact = (props, ref) => {
 								<div className="flex flex-col py-2">
 									<label className="uppercase text-lg py-2">Email</label>
 									<input
+										name="email"
 										className="border-2 rounded-lg p-3 flex border-gray-300"
 										type="email"
+										required
 									/>
 								</div>
 
 								<div className="flex flex-col py-2">
 									<label className="uppercase text-lg py-2">Message</label>
 									<textarea
+										name="message"
 										className="border-2 rounded-lg p-3 border-gray-300"
 										rows="10"
+										required
 									></textarea>
 								</div>
 
