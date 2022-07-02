@@ -68,7 +68,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 			<p className="fixed top-20 left-20"> {Math.abs(hero.current?.offsetTop - scrollPosition)} </p>
 			<p className="fixed top-20 left-36"> {Math.abs(about.current?.offsetTop - scrollPosition)} </p> 
             */}
-			<ul className="hidden fixed xl:flex flex-col left-0 top-48 px-8">
+			<ul className="hidden fixed xl:flex flex-col left-0 top-48 px-8 z-[100]">
 				{/*<li>
 					<p>{selected}</p>
                 </li>*/}
