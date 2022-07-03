@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectItem from "./ProjectItem";
+import covidImg from "../public/assets/covid_project.webp";
+import cdiffImg from "../public/assets/cdiff_project.svg";
+import despamImg from "../public/assets/email_despamifier.png";
+import httpServImg from "../public/assets/http_server_project.png";
+import portfolioImg from "../public/assets/portfolio_project.png";
 
 const Projects = (props, ref) => {
 	return (
@@ -10,34 +16,55 @@ const Projects = (props, ref) => {
 					Projects
 				</h2>
 
-				<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 z-[-1]">
-					<div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dfe]">
-						<Image
-							src="/assets/covid_project.webp"
-							alt="Visualization of single-tree XGBoost model"
-							width="510px"
-							height="420px"
-							className="rounded-xl group-hover:opacity-10"
-						></Image>
+				<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+					<ProjectItem
+						title="COVID-19 Diagnosis Prediction"
+						subtitle="Research (ML)"
+						backgroundImg={covidImg}
+						projectUrl="/covid-diagnosis-prediction"
+					/>
 
-						<div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-							<h3 className="text-2xl text-white tracking-wider text-center">
-								COVID-19 Diagnosis Prediction
-							</h3>
-							<p className="pb-4 pt-2 text-sm text-white text-center">
-								(Research)
-							</p>
-							<Link href="/">
-								<p className="pt-2 text-xl text-white text-center">More Info</p>
-							</Link>
-						</div>
-					</div>
+					<ProjectItem
+						title="Antibiotic Class-Specific Risk for CDI"
+						subtitle="Research (Statistics)"
+						backgroundImg={cdiffImg}
+						projectUrl="/antibiotic-risk-cdiff"
+					/>
 
-					<p>In progress</p>
-					<p>In progress</p>
-					<p>In progress</p>
-					<p>In progress</p>
-					<p>In progress</p>
+					<ProjectItem
+						title="Dementia Patient Mortality Prediction"
+						subtitle="Research (ML)"
+						backgroundImg={cdiffImg}
+						projectUrl="/dementia-mortality-prediction"
+					/>
+
+					<ProjectItem
+						title="MSK CLI"
+						subtitle="Software"
+						backgroundImg={cdiffImg}
+						projectUrl="/msk-cli"
+					/>
+
+					<ProjectItem
+						title="College Email De-Spamifier"
+						subtitle="Software"
+						backgroundImg={despamImg}
+						projectUrl="/email-despamifier"
+					/>
+
+					<ProjectItem
+						title="HTTP Web Server from Scratch"
+						subtitle="Software"
+						backgroundImg={httpServImg}
+						projectUrl="/http-server"
+					/>
+
+					<ProjectItem
+						title="Personal Portfolio"
+						subtitle="Website"
+						backgroundImg={portfolioImg}
+						projectUrl="/portfolio"
+					/>
 				</div>
 			</div>
 		</div>
