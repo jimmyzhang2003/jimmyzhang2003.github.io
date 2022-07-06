@@ -26,6 +26,17 @@ const Navbar = () => {
 		});
 	}, []);
 
+	// to maintain light/dark mode settings in between refreshes
+	useEffect(() => {
+		console.log(`Curr theme: ${sessionStorage.getItem("theme")}`);
+		setTheme(sessionStorage.getItem("theme"));
+		setShadow(true); //need to call setShadow to force re-render
+	}, []);
+
+	useEffect(() => {
+		sessionStorage.setItem("theme", theme);
+	}, [theme]);
+
 	return (
 		<div
 			className={

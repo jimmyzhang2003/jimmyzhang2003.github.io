@@ -83,7 +83,9 @@ const Contact = (props, ref) => {
 									></textarea>
 								</div>
 
-								<button className="w-full p-4 text-2xl mt-5">Send It!</button>
+								<button className="w-full p-4 text-2xl mt-5 hover:scale-105 ease-in duration-300">
+									Send It!
+								</button>
 							</form>
 						</div>
 					</div>

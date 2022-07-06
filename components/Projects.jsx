@@ -21,49 +21,49 @@ const Projects = (props, ref) => {
 						title="COVID-19 Diagnosis Prediction"
 						subtitle="Research (ML)"
 						backgroundImg={covidImg}
-						projectUrl="/covid-diagnosis-prediction"
+						projectUrl="/projects/covid_diagnosis_prediction"
 					/>
 
 					<ProjectItem
 						title="Antibiotic Class-Specific Risk for CDI"
 						subtitle="Research (Statistics)"
 						backgroundImg={cdiffImg}
-						projectUrl="/antibiotic-risk-cdiff"
+						projectUrl="/projects/antibiotic_risk_cdiff"
 					/>
 
 					<ProjectItem
 						title="Dementia Patient Mortality Prediction"
 						subtitle="Research (ML)"
 						backgroundImg={cdiffImg}
-						projectUrl="/dementia-mortality-prediction"
+						projectUrl="/projects/dementia_mortality_prediction"
 					/>
 
 					<ProjectItem
 						title="MSK CLI"
 						subtitle="Software"
 						backgroundImg={cdiffImg}
-						projectUrl="/msk-cli"
+						projectUrl="/projects/msk_cli"
 					/>
 
 					<ProjectItem
 						title="College Email De-Spamifier"
 						subtitle="Software"
 						backgroundImg={despamImg}
-						projectUrl="/email-despamifier"
+						projectUrl="/projects/email_despamifier"
 					/>
 
 					<ProjectItem
 						title="HTTP Web Server from Scratch"
 						subtitle="Software"
 						backgroundImg={httpServImg}
-						projectUrl="/http-server"
+						projectUrl="/projects/http_server"
 					/>
 
 					<ProjectItem
 						title="Personal Portfolio"
 						subtitle="Website"
 						backgroundImg={portfolioImg}
-						projectUrl="/portfolio"
+						projectUrl="/projects/portfolio"
 					/>
 				</div>
 			</div>
