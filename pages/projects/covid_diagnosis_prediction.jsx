@@ -14,7 +14,7 @@ const covid_diagnosis_prediction = () => {
 					layout="fill"
 					objectFit="cover"
 					src={covidImg}
-					alt="COVID-19 Diagnosis Prediction Decision Tree"
+					alt="Decision tree"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
@@ -90,23 +90,24 @@ const covid_diagnosis_prediction = () => {
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Scikit-learn
-							</p>
-							<p className="py-2 flex items-center">
-								<GiShirtButton className="pr-2 w-8" />
 								XGBoost
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Numpy
+								scikit-learn
+							</p>
+
+							<p className="py-2 flex items-center">
+								<GiShirtButton className="pr-2 w-8" />
+								numpy
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Pandas
+								pandas
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Matplotlib
+								matplotlib
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
