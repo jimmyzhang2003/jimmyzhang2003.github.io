@@ -9,7 +9,7 @@ import { IoIosPaper } from "react-icons/io";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
-	const [shadow, setShadow] = useState(false);
+	const [shadow, setShadow] = useState(true);
 	const { theme, setTheme } = useTheme();
 
 	const handleNav = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
 	useEffect(() => {
 		console.log(`Curr theme: ${sessionStorage.getItem("theme")}`);
 		setTheme(sessionStorage.getItem("theme"));
-		setShadow(true); //need to call setShadow to force re-render
+		setShadow(false); //need to call setShadow to force re-render
 	}, []);
 
 	useEffect(() => {
