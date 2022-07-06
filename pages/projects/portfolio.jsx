@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import despamImg from "../../public/assets/email_despamifier.png";
+import portfolioImg from "../../public/assets/portfolio_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
-const email_despamifier = () => {
+const portfolio = () => {
 	return (
 		<div className="w-full">
 			<div className="w-screen top-[80px] h-[40vh] relative">
@@ -13,13 +13,13 @@ const email_despamifier = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={despamImg}
-					alt="Email de-spamifier demo"
+					src={portfolioImg}
+					alt="Portfolio screenshot"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-					<h2 className="py-2">College Email De-Spamifier</h2>
-					<h3>Software</h3>
+					<h2 className="py-2">Personal Portfolio</h2>
+					<h3>Website</h3>
 				</div>
 			</div>
 
@@ -27,13 +27,10 @@ const email_despamifier = () => {
 				<div className="col-span-10 md:col-span-7">
 					<h2>Project Overview</h2>
 					<p className="mt-4">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam,
-						deserunt nostrum vitae nesciunt ipsum dolorem blanditiis debitis
-						libero rerum voluptas quidem praesentium voluptatibus tempora,
-						veniam ea! Maiores, cupiditate repudiandae?
+						This website! A snapshot of my work, goals, and personal life.
 					</p>
 					<a
-						href="https://github.com/Inigo42/college-email-despamifier-backend"
+						href="https://github.com/jimmyzhang2003/jimmyzhang2003.github.io"
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -41,18 +38,9 @@ const email_despamifier = () => {
 							Code
 						</button>
 					</a>
-					<a
-						href="https://medium.com/ai-camp/interns-or-entrepreneurs-how-ai-camp-redefined-the-tech-internship-4988c366625e"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Medium Article
-						</button>
-					</a>
-					<a href="https://www.ai-camp.org/" target="_blank" rel="noreferrer">
+					<a href="https://jimmyzhang.me" target="_blank" rel="noreferrer">
 						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							AI Camp Website
+							Website
 						</button>
 					</a>
 				</div>
@@ -64,24 +52,19 @@ const email_despamifier = () => {
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 auto-rows-min">
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Python
+								React.js
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Django
+								Next.js
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Beautiful Soup
-							</p>
-
-							<p className="py-2 flex items-center">
-								<GiShirtButton className="pr-2 w-8" />
-								Google Apps Script
+								Tailwind CSS
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								SQLite
+								Vercel
 							</p>
 						</div>
 					</div>
@@ -97,4 +80,4 @@ const email_despamifier = () => {
 	);
 };
 
-export default email_despamifier;
+export default portfolio;
