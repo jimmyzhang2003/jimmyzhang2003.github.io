@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 import covidImg from "../public/assets/covid_project.webp";
 import cdiffImg from "../public/assets/cdiff_project.svg";
+import naccImg from "../public/assets/nacc_project.png";
 import despamImg from "../public/assets/email_despamifier.png";
 import httpServImg from "../public/assets/http_server_project.png";
 import portfolioImg from "../public/assets/portfolio_project.png";
@@ -34,7 +35,7 @@ const Projects = (props, ref) => {
 					<ProjectItem
 						title="Dementia Patient Mortality Prediction"
 						subtitle="Research (ML)"
-						backgroundImg={cdiffImg}
+						backgroundImg={naccImg}
 						projectUrl="/projects/dementia_mortality_prediction"
 					/>
 

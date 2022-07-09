@@ -42,10 +42,10 @@ const Navbar = () => {
 			className={
 				shadow
 					? theme === "dark"
-						? "fixed w-full h-20 shadow-xl bg-[#171717] z-[100]"
+						? "fixed w-full h-20 shadow-xl bg-[#242526] z-[100]"
 						: "fixed w-full h-20 shadow-xl bg-white z-[100]"
 					: theme === "dark"
-					? "fixed w-full h-20 bg-[#171717] z-[100]"
+					? "fixed w-full h-20 bg-[#242526] z-[100]"
 					: "fixed w-full h-20 bg-white z-[100]"
 			}
 		>
