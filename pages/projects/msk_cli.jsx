@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import despamImg from "../../public/assets/email_despamifier.png";
 import { GiShirtButton } from "react-icons/gi";
 
 const msk_cli = () => {
@@ -17,7 +18,7 @@ const msk_cli = () => {
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-					<h2 className="py-2">College Email De-Spamifier</h2>
+					<h2 className="py-2">MSK CLI</h2>
 					<h3>Software</h3>
 				</div>
 			</div>
@@ -31,29 +32,6 @@ const msk_cli = () => {
 						libero rerum voluptas quidem praesentium voluptatibus tempora,
 						veniam ea! Maiores, cupiditate repudiandae?
 					</p>
-					<a
-						href="https://github.com/Inigo42/college-email-despamifier-backend"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a
-						href="https://medium.com/ai-camp/interns-or-entrepreneurs-how-ai-camp-redefined-the-tech-internship-4988c366625e"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Medium Article
-						</button>
-					</a>
-					<a href="https://www.ai-camp.org/" target="_blank" rel="noreferrer">
-						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							AI Camp Website
-						</button>
-					</a>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -63,24 +41,19 @@ const msk_cli = () => {
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 auto-rows-min">
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Python
+								Typescript
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Django
+								Node.js
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Beautiful Soup
-							</p>
-
-							<p className="py-2 flex items-center">
-								<GiShirtButton className="pr-2 w-8" />
-								Google Apps Script
+								oclif
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								SQLite
+								hygen
 							</p>
 						</div>
 					</div>
