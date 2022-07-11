@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import despamImg from "../../public/assets/email_despamifier.png";
+import cliImg from "../../public/assets/cli_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
 const msk_cli = () => {
@@ -13,8 +13,8 @@ const msk_cli = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={despamImg}
-					alt="Email de-spamifier demo"
+					src={cliImg}
+					alt="The MSK CLI"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
@@ -33,7 +33,15 @@ const msk_cli = () => {
 						Informatics & Technology Solutions (DigITs) division at Memorial
 						Sloan Kettering Cancer Center.
 					</p>
-					<p className="mt-4">The ultimate goal</p>
+					<p className="mt-4">
+						The ultimate goal of this CLI tool was to minimize overhead time
+						spent by MSK developers in the browser and while writing redundant
+						boilerplate code. The MSK CLI would help to provide easy access to
+						MSK resources and code generation directly within the terminal, and
+						the scalable plugin system would enable individual teams from all
+						across DigITs to build their own plugins to enhance the MSK CLI and
+						subsequently share their tooling with other teams.
+					</p>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">
