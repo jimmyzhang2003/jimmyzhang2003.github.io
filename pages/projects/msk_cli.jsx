@@ -27,11 +27,13 @@ const msk_cli = () => {
 				<div className="col-span-10 md:col-span-7">
 					<h2>Project Overview</h2>
 					<p className="mt-4">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam,
-						deserunt nostrum vitae nesciunt ipsum dolorem blanditiis debitis
-						libero rerum voluptas quidem praesentium voluptatibus tempora,
-						veniam ea! Maiores, cupiditate repudiandae?
+						I built a command-line interface using the Open CLI Framework
+						(oclif), with a streamlined plugin system and a scalable hygen code
+						generator, for use by developers across the entire Digital,
+						Informatics & Technology Solutions (DigITs) division at Memorial
+						Sloan Kettering Cancer Center.
 					</p>
+					<p className="mt-4">The ultimate goal</p>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">

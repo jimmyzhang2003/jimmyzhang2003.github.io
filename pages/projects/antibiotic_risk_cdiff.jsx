@@ -30,11 +30,47 @@ const antibiotic_risk_cdiff = () => {
 			<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-28">
 				<div className="col-span-10 md:col-span-7">
 					<h2>Abstract</h2>
+					<h3 className="text-2xl font-bold mt-4">Background</h3>
 					<p className="mt-4">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-						ad laboriosam ullam natus, porro voluptates animi quia rem sapiente
-						optio accusamus quo nostrum tempora. Quas quo esse sit obcaecati
-						pariatur!
+						Antibiotics are the crucial risk factor for community-acquired
+						<em> Clostridioides difficile</em> infection (CA-CDI). However, the
+						relative risks associated with specific antibiotics have varied
+						across studies, and the absolute risks have not been clearly
+						established.
+					</p>
+					<h3 className="text-2xl font-bold mt-4">Methods</h3>
+					<p className="mt-4">
+						This was a retrospective cohort study. Adults were included if they
+						received an outpatient antibiotic prescription within the IBM®
+						MarketScan® Research Databases between 2008 and 2020. The primary
+						exposure was an outpatient antibiotic prescription, and receipt of
+						doxycycline was used as the reference comparison. The primary
+						outcome was CA-CDI, defined as the presence of an ICD diagnosis code
+						for CDI within 90 days of receiving an outpatient antibiotic
+						prescription, and subsequent treatment for CDI.
+					</p>
+					<h3 className="text-2xl font-bold mt-4">Results</h3>
+					<p className="mt-4">
+						A total of 20 million continuously enrolled unique patients
+						receiving outpatient antibiotic prescriptions were selected,
+						including 9,668 (0.05%) who developed CA-CDI. Relative to
+						doxycycline, the antibiotic classes conferring the highest risks for
+						CA-CDI were clindamycin (adjusted odds ratio [aOR] 3.70, 95%
+						confidence interval [CI]: 3.31-4.14), cefdinir (aOR 2.88, 95% CI:
+						2.47-3.34), cefuroxime (aOR 2.31, 95% CI: 1.96-2.72), and
+						fluoroquinolones (aOR 2.02, 95% CI: 1.82-2.24). However, among older
+						patients with comorbidities and recent hospitalization, the risk
+						associated with nitrofurantoin exceeded that of clindamycin, with a
+						number needed to harm of 223 for nitrofurantoin relative to
+						doxycycline. While clindamycin use declined from 2008 to 2020,
+						nitrofurantoin use increased by 40%.
+					</p>
+					<h3 className="text-2xl font-bold mt-4">Conclusions</h3>
+					<p className="mt-4">
+						Clindamycin was associated with the greatest relative risk for
+						CA-CDI overall, but nitrofurantoin had significant associated harm
+						within a high-risk sub-population. These results may guide
+						antibiotic selection and future stewardship efforts.
 					</p>
 
 					<a
