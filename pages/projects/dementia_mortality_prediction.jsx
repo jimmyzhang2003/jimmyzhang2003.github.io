@@ -30,11 +30,25 @@ const dementia_mortality_prediction = () => {
 				<div className="col-span-10 md:col-span-7">
 					<h2>Project Overview</h2>
 					<p className="mt-4">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quam,
-						deserunt nostrum vitae nesciunt ipsum dolorem blanditiis debitis
-						libero rerum voluptas quidem praesentium voluptatibus tempora,
-						veniam ea! Maiores, cupiditate repudiandae?
+						Alzheimer&apos;s disease, in addition to other neurodegenerative
+						diseases that give rise to dementia, is the seventh leading cause of
+						death and currently affects over 50 million people worldwide. The
+						healthcare burden of dementia is immense, exacerbated by the lack of
+						curative drugs.
 					</p>
+					<p className="mt-4">
+						In this research study, we leveraged the National Alzheimer&apos;s
+						Coordinating Center (NACC) database, the largest resource of its
+						kind in the United States to (1) build machine learning models to
+						predict mortality within dementia patients at various survival
+						thresholds and (2) identify key clinical features predictive of
+						patient mortality across various dementia types. Our overarching aim
+						was to help flag dementia patients with a faster rate of decline and
+						likely mortality, delineate the differences between dementia types,
+						and, more broadly, provide insights into specific dementia patient
+						populations to inform disease screening and clinical practice.
+					</p>
+					{/*
 					<a href="/" target="_blank" rel="noreferrer">
 						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 							Code
@@ -44,7 +58,8 @@ const dementia_mortality_prediction = () => {
 						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 							Publication
 						</button>
-					</a>
+                    </a>
+                    */}
 					<a
 						href="https://labs.icahn.mssm.edu/kuanhuanglab/"
 						target="_blank"
