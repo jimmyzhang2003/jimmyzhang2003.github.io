@@ -38,7 +38,7 @@ const portfolio = () => {
 							Code
 						</button>
 					</a>
-					<a href="https://jimmyzhang.me" target="_blank" rel="noreferrer">
+					<a href="https://zhangjimmy.com" target="_blank" rel="noreferrer">
 						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
 							Website
 						</button>
