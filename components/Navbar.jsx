@@ -31,7 +31,7 @@ const Navbar = () => {
 		console.log(`Curr theme: ${sessionStorage.getItem("theme")}`);
 		setTheme(sessionStorage.getItem("theme"));
 		setShadow(false); //need to call setShadow to force re-render
-	}, []);
+	}, [setTheme]);
 
 	useEffect(() => {
 		sessionStorage.setItem("theme", theme);
@@ -213,7 +213,10 @@ const Navbar = () => {
 									</a>
 
 									<Link href="#contact">
-										<div className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+										<div
+											className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+											onClick={() => setNav(false)}
+										>
 											<AiOutlineMail />
 										</div>
 									</Link>
