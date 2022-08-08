@@ -130,7 +130,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 							onMouseLeave={() => setProjectsHover(false)}
 							className={
 								selected === "Projects"
-									? "rounded-full border-4 border-indigo-600 first-letter:cursor-pointer p-3 my-4 mx-2 h-10 w-10 bg-indigo-600"
+									? "rounded-full border-4 border-indigo-600 cursor-pointer p-3 my-4 mx-2 h-10 w-10 bg-indigo-600"
 									: "rounded-full border-4 border-indigo-600 cursor-pointer p-3 my-4 mx-2 h-10 w-10"
 							}
 						></div>
