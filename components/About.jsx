@@ -14,45 +14,43 @@ const About = (props, ref) => {
 						About Me
 					</h2>
 					<p>
-						Hailing from Flushing, New York, I am a rising sophomore at Columbia
+						Hailing from Flushing, New York, I am a sophomore at Columbia
 						University in the City of New York double-majoring in computer
 						science and cognitive science. My academics cover the fundamental,
 						computational, and theoretical aspects of computer science and the
-						mind, with a focus on intelligent systems (artificial intelligence
-						and machine learning). For the last three years, I have been working
-						as a research assistant in Professor Kuan-lin Huang&apos;s
-						Computational Omics Lab at the Icahn School of Medicine at Mount
-						Sinai, spearheading machine learning studies on COVID-19 and
-						Alzheimer&apos;s disease. During my freshman year, I was selected to
-						be a DSI Scholar at the Data Science Institute at Columbia
-						University, where I had the opportunity to work on another research
-						study with Dr. Daniel Freedberg, identifying which antibiotic
-						classes confer the greatest risk of <em>C. difficile</em> infection.
-						In the past, I have also dabbled quite a bit in teaching, working as
-						a teacher, tutor, and swimming instructor throughout high school. In
-						many ways, I would say that teaching is one of my hidden passions,
-						and quite honestly, I would rather have meaningful human-to-human
-						interaction than alone time with my MacBook any day of the week.
+						mind, with a focus on intelligent systems. For the last three years,
+						I have been working as a research assistant in Professor Kuan-lin
+						Huang&apos;s Computational Omics Lab at the Icahn School of Medicine
+						at Mount Sinai, spearheading machine learning studies on COVID-19
+						and Alzheimer&apos;s disease. During my freshman year, I was
+						selected to be a DSI Scholar at the Data Science Institute at
+						Columbia University, where I had the opportunity to work on an
+						epidemiological research study with Dr. Daniel Freedberg,
+						identifying which antibiotic classes confer the greatest risk of{" "}
+						<em>C. difficile</em> infection. In the past, I have also dabbled
+						quite a bit in teaching, working as a teacher, tutor, and swimming
+						instructor throughout high school. In many ways, I would say that
+						teaching is one of my hidden passions, and quite honestly, I would
+						rather have some meaningful human-to-human interaction than alone
+						time with my MacBook any day of the week.
 					</p>
 					<br />
 					<p>
 						What started out as a reluctant acknowledgment that taking a
-						computer science class might be somewhat useful for my future turned
-						out to be a defining career choice at the intersection of computer
-						science, data science, and healthcare. Since my early days of
-						playing around with R and Python for my independent research
-						projects, I have since come to love computer technology and its vast
-						applications in medicine and healthcare. However, for the most part,
-						my experience has been in the research fields, and prior to this
-						summer, I had little exposure to software development, barring a
-						short internship stint at AI Camp. This summer, however, I finally
-						dipped my toes into the software engineering world, working as a
-						software engineering intern as part of the Digital Informatics &
-						Technology Solutions (DigITs) division at Memorial Sloan Kettering
-						Cancer Center. Moving forward, I hope to continue my work in machine
-						learning, bioinformatics research, and software engineering, using
-						computer technology to bridge gaps in healthcare and bring people
-						together.
+						computer science class might be useful for my future turned out to
+						be a defining career choice at the intersection of computer science,
+						data science, and healthcare. Since my early days of playing around
+						with R and Python for my independent research projects, I have since
+						come to love computer technology and its vast applications in
+						medicine and healthcare. This summer, I joined Memorial Sloan
+						Kettering Cancer Center as a software engineering intern, working on
+						a number of exciting software projects, including a CLI tool for MSK
+						developers and a clinican-facing Connected Care Dashboard
+						application, for which I worked primarily on the frontend, unit
+						tests, and automation tests. Moving forward, I hope to continue my
+						work in machine learning, bioinformatics research, and software
+						engineering, using computer technology to bridge gaps in healthcare
+						and bring people together.
 					</p>
 					<br />
 					<p>

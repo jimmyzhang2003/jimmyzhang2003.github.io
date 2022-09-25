@@ -23,7 +23,7 @@ const antibiotic_risk_cdiff = () => {
 						<em>Clostridioides difficile</em> Infection in the United States
 						from 2008 to 2020
 					</h2>
-					<h3>Research (Statistics)</h3>
+					<h3>Research (Statistics/Epidemiology)</h3>
 				</div>
 			</div>
 

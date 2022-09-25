@@ -28,7 +28,7 @@ const Projects = (props, ref) => {
 
 					<ProjectItem
 						title="Antibiotic-Specific Risk for CA-CDI"
-						subtitle="Research (Statistics)"
+						subtitle="Research (Statistics/Epidemiology)"
 						backgroundImg={cdiffImg}
 						projectUrl="/projects/antibiotic_risk_cdiff"
 					/>
