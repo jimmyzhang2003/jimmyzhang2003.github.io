@@ -48,18 +48,16 @@ const dementia_mortality_prediction = () => {
 						and, more broadly, provide insights into specific dementia patient
 						populations to inform disease screening and clinical practice.
 					</p>
-					{/*
-					<a href="/" target="_blank" rel="noreferrer">
+
+					<a
+						href="https://github.com/Huang-lab/dementia-survival-prediction"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 							Code
 						</button>
 					</a>
-					<a href="/" target="_blank" rel="noreferrer">
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Publication
-						</button>
-                    </a>
-                    */}
 					<a
 						href="https://labs.icahn.mssm.edu/kuanhuanglab/"
 						target="_blank"
