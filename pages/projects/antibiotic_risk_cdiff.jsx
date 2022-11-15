@@ -33,17 +33,17 @@ const antibiotic_risk_cdiff = () => {
 					<p className="mt-4">
 						Antibiotic exposure is a crucial risk factor for community-acquired
 						<em> Clostridioides difficile</em> infection (CA-CDI). However, the
-						relative risks associated with specific antibiotics have varied
-						across studies, and the absolute risks have not been clearly
-						established. This was a retrospective cohort study. Adults were
-						included if they received an outpatient antibiotic prescription
-						within the IBM® MarketScan® Databases between 2008 and 2020. The
-						primary exposure was an outpatient antibiotic prescription, and
-						receipt of doxycycline was used as the reference comparison. The
-						primary outcome was CA-CDI, defined as the presence of an ICD
-						diagnosis code for CDI within 90 days of receiving an outpatient
-						antibiotic prescription, and subsequent treatment for CDI. There
-						were 36,626,794 unique patients who received outpatient antibiotics
+						relative risks associated with specific antibiotics may vary over
+						time, and the absolute risks have not been clearly established. This
+						was a retrospective cohort study. Adults were included if they
+						received an outpatient antibiotic prescription within the IBM®
+						MarketScan® Databases between 2008 and 2020. The primary exposure
+						was an outpatient antibiotic prescription, and receipt of
+						doxycycline was used as the reference comparison. The primary
+						outcome was CA-CDI, defined as the presence of an ICD diagnosis code
+						for CDI within 90 days of receiving an outpatient antibiotic
+						prescription, and subsequent treatment for CDI. There were
+						36,626,794 unique patients who received outpatient antibiotics
 						including 11,607 (0.03%) who developed CA-CDI. Relative to
 						doxycycline, the antibiotics conferring the highest risks for CA-CDI
 						were clindamycin (adjusted odds ratio [aOR] 8.81, 95% confidence
@@ -70,6 +70,16 @@ const antibiotic_risk_cdiff = () => {
 							Code
 						</button>
 					</a>
+					<a
+						href="https://journals.asm.org/doi/10.1128/aac.01129-22#T2F1"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+							Publication
+						</button>
+					</a>
+
 					{/*
 					<a
 						href="https://www.nature.com/articles/s41598-021-93126-7"
