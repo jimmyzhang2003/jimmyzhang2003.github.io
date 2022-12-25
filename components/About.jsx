@@ -24,15 +24,15 @@ const About = (props, ref) => {
 						at Mount Sinai, spearheading machine learning studies on COVID-19
 						and Alzheimer&apos;s disease. During my freshman year, I was
 						selected to be a DSI Scholar at the Data Science Institute at
-						Columbia University, where I had the opportunity to work on an
+						Columbia University, where I had the opportunity to conduct an
 						epidemiological research study with Dr. Daniel Freedberg,
 						identifying which antibiotic classes confer the greatest risk of{" "}
-						<em>C. difficile</em> infection. In the past, I have also dabbled
-						quite a bit in teaching, working as a teacher, tutor, and swimming
-						instructor throughout high school. In many ways, I would say that
-						teaching is one of my hidden passions, and quite honestly, I would
-						rather have some meaningful human-to-human interaction than alone
-						time with my MacBook any day of the week.
+						community-acquired <em>C. difficile</em> infection. In the past, I
+						have also dabbled quite a bit in teaching, working as a teacher,
+						tutor, and swimming instructor throughout high school. In many ways,
+						I would say that teaching is one of my hidden passions, and quite
+						honestly, I would rather have some meaningful human-to-human
+						interaction than alone time with my MacBook any day of the week.
 					</p>
 					<br />
 					<p>
@@ -40,9 +40,9 @@ const About = (props, ref) => {
 						computer science class might be useful for my future turned out to
 						be a defining career choice at the intersection of computer science,
 						data science, and healthcare. Since my early days of playing around
-						with R and Python for my independent research projects, I have since
+						with R and Python on independent research projects, I have since
 						come to love computer technology and its vast applications in
-						medicine and healthcare. This summer, I joined Memorial Sloan
+						medicine and healthcare. Last summer, I joined Memorial Sloan
 						Kettering Cancer Center as a software engineering intern, working on
 						a number of exciting software projects, including a CLI tool for MSK
 						developers and a clinican-facing Connected Care Dashboard
