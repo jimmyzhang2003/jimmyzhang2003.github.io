@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import covidImg from "../../public/assets/covid_project.webp";
+import covidImg from "../../public/assets/covid_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
 const covid_diagnosis_prediction = () => {

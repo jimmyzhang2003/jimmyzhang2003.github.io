@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
-import covidImg from "../public/assets/covid_project.webp";
+import covidImg from "../public/assets/covid_project.png";
 import cdiffImg from "../public/assets/cdiff_project.svg";
 import naccImg from "../public/assets/nacc_project.png";
 import cliImg from "../public/assets/cli_project.png";
