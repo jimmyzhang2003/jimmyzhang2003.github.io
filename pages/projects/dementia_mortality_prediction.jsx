@@ -19,8 +19,8 @@ const dementia_mortality_prediction = () => {
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
 					<h2 className="py-2">
-						Predictive Models and Features of Patient Mortality across Dementia
-						Types
+						Machine Learning Models Identify Predictive Features of Patient
+						Mortality across Dementia Types
 					</h2>
 					<h3>Research (ML)</h3>
 				</div>

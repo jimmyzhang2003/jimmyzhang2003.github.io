@@ -19,9 +19,6 @@ const Hero = (props, ref) => {
 					<p className="uppercase text-md tracking-widest text-gray-400">
 						Computer Science Student
 					</p>
-					<p className="uppercase text-md tracking-widest text-gray-400">
-						Lifelong Learner
-					</p>
 					<h1 className="py-2 px-3">
 						Hi there, I&apos;m <span className="text-[#b903de]">Jimmy</span>
 					</h1>

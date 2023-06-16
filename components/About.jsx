@@ -14,25 +14,22 @@ const About = (props, ref) => {
 						About Me
 					</h2>
 					<p>
-						Hailing from Flushing, New York, I am a sophomore at Columbia
+						Hailing from Flushing, New York, I am a junior at Columbia
 						University in the City of New York double-majoring in computer
-						science and cognitive science. My academics cover the fundamental,
-						computational, and theoretical aspects of computer science and the
-						mind, with a focus on intelligent systems. For the last three years,
-						I have been working as a research assistant in Professor Kuan-lin
-						Huang&apos;s Computational Omics Lab at the Icahn School of Medicine
-						at Mount Sinai, spearheading machine learning studies on COVID-19
-						and Alzheimer&apos;s disease. During my freshman year, I was
-						selected to be a DSI Scholar at the Data Science Institute at
-						Columbia University, where I had the opportunity to conduct an
-						epidemiological research study with Dr. Daniel Freedberg,
-						identifying which antibiotic classes confer the greatest risk of{" "}
-						community-acquired <em>C. difficile</em> infection. In the past, I
-						have also dabbled quite a bit in teaching, working as a teacher,
-						tutor, and swimming instructor throughout high school. In many ways,
-						I would say that teaching is one of my hidden passions, and quite
-						honestly, I would rather have some meaningful human-to-human
-						interaction than alone time with my MacBook any day of the week.
+						science and cognitive science. For the last four years, I have been
+						working as a research assistant in Professor Kuan-lin Huang&apos;s
+						Computational Omics Lab at the Icahn School of Medicine at Mount
+						Sinai, spearheading machine learning studies on COVID-19 and
+						Alzheimer&apos;s disease. During my freshman year, I had the
+						opportunity to conduct an epidemiological research study with Dr.
+						Daniel Freedberg as a DSI Scholar, identifying which antibiotic
+						classes confer the greatest risk of community-acquired{" "}
+						<em>C. difficile</em> infection. In the past, I have also dabbled
+						quite a bit in teaching, working as a teacher, tutor, and swimming
+						instructor throughout high school. In many ways, I would say that
+						teaching is one of my hidden passions, and honestly, I would rather
+						have some meaningful human-to-human interaction than alone time with
+						my MacBook any day of the week.
 					</p>
 					<br />
 					<p>
@@ -42,15 +39,18 @@ const About = (props, ref) => {
 						data science, and healthcare. Since my early days of playing around
 						with R and Python on independent research projects, I have since
 						come to love computer technology and its vast applications in
-						medicine and healthcare. Last summer, I joined Memorial Sloan
-						Kettering Cancer Center as a software engineering intern, working on
-						a number of exciting software projects, including a CLI tool for MSK
-						developers and a clinican-facing Connected Care Dashboard
-						application, for which I worked primarily on the frontend, unit
-						tests, and automation tests. Moving forward, I hope to continue my
-						work in machine learning, bioinformatics research, and software
-						engineering, using computer technology to bridge gaps in healthcare
-						and bring people together.
+						medicine and healthcare. During the summer of my freshman year, I
+						joined Memorial Sloan Kettering Cancer Center as a software
+						engineering intern, working on a number of exciting software
+						projects, including a CLI tool for MSK developers and a
+						clinican-facing Connected Care Dashboard application, for which I
+						worked primarily on the frontend, unit tests, and automation tests.
+						This summer, I am working as a software engineering intern at
+						Microsoft + Nuance, building iOS apps that make use of the ambient
+						note-taking capabilities of Dragon Ambient eXperience (DAX)
+						technology, with the intent of reducing clincal burden. Moving
+						forward, I hope to continue using software to bridge gaps in
+						healthcare and bring people together.
 					</p>
 					<br />
 					<p>
@@ -64,10 +64,10 @@ const About = (props, ref) => {
 
 				<div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
 					<Image
-						src="/assets/mskcc_logo.jpeg"
-						alt="MSKCC Logo"
+						src="/assets/microsoft+nuance_logo.jpeg"
+						alt="Microsoft+Nuance Logo"
 						width="400px"
-						height="400px"
+						height="200px"
 					/>
 				</div>
 			</div>
