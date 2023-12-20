@@ -15,15 +15,14 @@ const About = (props, ref) => {
 					</h2>
 					<p>
 						Hailing from Flushing, New York, I am a junior at Columbia
-						University in the City of New York double-majoring in computer
-						science and cognitive science. For the last four years, I have been
-						working as a research assistant in Professor Kuan-lin Huang&apos;s
-						Computational Omics Lab at the Icahn School of Medicine at Mount
-						Sinai, spearheading machine learning studies on COVID-19 and
-						Alzheimer&apos;s disease. During my freshman year, I had the
-						opportunity to conduct an epidemiological research study with Dr.
-						Daniel Freedberg as a DSI Scholar, identifying which antibiotic
-						classes confer the greatest risk of community-acquired{" "}
+						University in the City of New York studying computer science. For
+						the last four years, I have been working as a research assistant in
+						Professor Kuan-lin Huang&apos;s Computational Omics Lab at the Icahn
+						School of Medicine at Mount Sinai, spearheading machine learning
+						studies on COVID-19 and Alzheimer&apos;s disease. During my freshman
+						year, I had the opportunity to conduct an epidemiological research
+						study with Dr. Daniel Freedberg as a DSI Scholar, identifying which
+						antibiotic classes confer the greatest risk of community-acquired{" "}
 						<em>C. difficile</em> infection. In the past, I have also dabbled
 						quite a bit in teaching, working as a teacher, tutor, and swimming
 						instructor throughout high school. In many ways, I would say that
