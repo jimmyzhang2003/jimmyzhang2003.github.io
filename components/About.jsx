@@ -44,12 +44,12 @@ const About = (props, ref) => {
 						projects, including a CLI tool for MSK developers and a
 						clinican-facing Connected Care Dashboard application, for which I
 						worked primarily on the frontend, unit tests, and automation tests.
-						This summer, I am working as a software engineering intern at
-						Microsoft + Nuance, building iOS apps that make use of the ambient
-						note-taking capabilities of Dragon Ambient eXperience (DAX)
-						technology, with the intent of reducing clincal burden. Moving
-						forward, I hope to continue using software to bridge gaps in
-						healthcare and bring people together.
+						Last summer, I worked as a software engineering intern at Microsoft
+						+ Nuance, building iOS apps that make use of the ambient note-taking
+						capabilities of Dragon Ambient eXperience (DAX) technology, with the
+						intent of reducing clincal burden. Moving forward, I hope to
+						continue using software to bridge gaps in healthcare and bring
+						people together.
 					</p>
 					<br />
 					<p>

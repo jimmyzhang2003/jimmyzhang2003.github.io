@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillSunFill, BSFillMoonFill, BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { IoIosPaper } from "react-icons/io";
 
 const Navbar = () => {
@@ -66,9 +66,9 @@ const Navbar = () => {
 						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 					>
 						{theme === "dark" ? (
-							<BsFillSunFill size={27} color="#f5bd1f" />
-						) : (
 							<BsFillMoonFill size={27} color="#f5bd1f" />
+						) : (
+							<BsFillSunFill size={27} color="#f5bd1f" />
 						)}
 					</div>
 					<ul className="hidden md:flex">
