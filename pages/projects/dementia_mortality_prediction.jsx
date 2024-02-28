@@ -28,25 +28,46 @@ const dementia_mortality_prediction = () => {
 
 			<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-28">
 				<div className="col-span-10 md:col-span-7">
-					<h2>Project Overview</h2>
-					<p className="mt-4">
-						Alzheimer&apos;s disease, in addition to other neurodegenerative
-						diseases that give rise to dementia, is the seventh leading cause of
-						death and currently affects over 50 million people worldwide. The
-						healthcare burden of dementia is immense, exacerbated by the lack of
-						curative drugs.
+					<h2>Abstract</h2>
+					<p className="mt-4 mb-2 font-black">Background</p>
+					<p>
+						Dementia care is challenging due to the divergent trajectories in
+						disease progression and outcomes. Predictive models are needed to
+						flag patients at risk of near-term mortality and identify factors
+						contributing to mortality risk across different dementia types.
 					</p>
-					<p className="mt-4">
-						In this research study, we leveraged the National Alzheimer&apos;s
-						Coordinating Center (NACC) database, the largest resource of its
-						kind in the United States to (1) build machine learning models to
-						predict mortality within dementia patients at various survival
-						thresholds and (2) identify key clinical features predictive of
-						patient mortality across various dementia types. Our overarching aim
-						was to help flag dementia patients with a faster rate of decline and
-						likely mortality, delineate the differences between dementia types,
-						and, more broadly, provide insights into specific dementia patient
-						populations to inform disease screening and clinical practice.
+					<p className="mt-4 mb-2 font-black">Methods</p>
+					<p>
+						Here, we developed machine-learning models predicting dementia
+						patient mortality at four different survival thresholds using a
+						dataset of 45,275 unique participants and 163,782 visit records from
+						the U.S. National Alzheimer’s Coordinating Center (NACC). We built
+						multi-factorial XGBoost models using a small set of mortality
+						predictors and conducted stratified analyses with
+						dementiatype-specific models.
+					</p>
+					<p className="mt-4 mb-2 font-black">Results</p>
+					<p>
+						Our models achieved an area under the receiver operating
+						characteristic curve (AUC-ROC) of over 0.82 utilizing nine
+						parsimonious features for all 1-, 3-, 5-, and 10-year thresholds.
+						The trained models mainly consisted of dementia-related predictors
+						such as specific neuropsychological tests and were minimally
+						affected by other age-related causes of death, e.g., stroke and
+						cardiovascular conditions. Notably, stratified analyses revealed
+						shared and distinct predictors of mortality across eight dementia
+						types. Unsupervised clustering of mortality predictors grouped
+						vascular dementia with depression and Lewy body dementia with
+						frontotemporal lobar dementia.
+					</p>
+					<p className="mt-4 mb-2 font-black">Conclusions</p>
+					<p>
+						This study demonstrates the feasibility of flagging dementia
+						patients at risk of mortality for personalized clinical management.
+						Parsimonious machine-learning models can be used to predict dementia
+						patient mortality with a limited set of clinical features, and
+						dementiatype-specific models can be applied to heterogeneous
+						dementia patient populations.
 					</p>
 
 					<a
@@ -56,6 +77,15 @@ const dementia_mortality_prediction = () => {
 					>
 						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 							Code
+						</button>
+					</a>
+					<a
+						href="https://www.nature.com/articles/s43856-024-00437-7"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+							Publication
 						</button>
 					</a>
 					<a

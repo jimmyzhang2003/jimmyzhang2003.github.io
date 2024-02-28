@@ -20,6 +20,13 @@ const Projects = (props, ref) => {
 
 				<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
 					<ProjectItem
+						title="Dementia Patient Mortality Prediction"
+						subtitle="Research (ML)"
+						backgroundImg={naccImg}
+						projectUrl="/projects/dementia_mortality_prediction"
+                    />
+                    
+					<ProjectItem
 						title="COVID-19 Diagnosis Prediction"
 						subtitle="Research (ML)"
 						backgroundImg={covidImg}
@@ -31,13 +38,6 @@ const Projects = (props, ref) => {
 						subtitle="Research (Statistics/Epidemiology)"
 						backgroundImg={cdiffImg}
 						projectUrl="/projects/antibiotic_risk_cdiff"
-					/>
-
-					<ProjectItem
-						title="Dementia Patient Mortality Prediction"
-						subtitle="Research (ML)"
-						backgroundImg={naccImg}
-						projectUrl="/projects/dementia_mortality_prediction"
 					/>
 
 					<ProjectItem

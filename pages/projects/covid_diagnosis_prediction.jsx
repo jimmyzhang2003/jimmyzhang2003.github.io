@@ -22,7 +22,7 @@ const covid_diagnosis_prediction = () => {
 						Prediction of Individual COVID-19 Diagnosis Using Baseline
 						Demographics and Lab Data
 					</h2>
-					<h3>Research (Machine Learning)</h3>
+					<h3>Research (ML)</h3>
 				</div>
 			</div>
 
