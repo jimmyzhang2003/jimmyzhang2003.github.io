@@ -29,20 +29,24 @@ const portfolio = () => {
 					<p className="mt-4">
 						This website! A snapshot of my work, goals, and personal life.
 					</p>
-					<a
-						href="https://github.com/jimmyzhang2003/jimmyzhang2003.github.io"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a href="https://zhangjimmy.com" target="_blank" rel="noreferrer">
-						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							Website
-						</button>
-					</a>
+
+					{/* Links */}
+					<div className="my-7">
+						<a
+							href="https://github.com/jimmyzhang2003/jimmyzhang2003.github.io"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code
+							</button>
+						</a>
+						<a href="https://zhangjimmy.com" target="_blank" rel="noreferrer">
+							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
+								Website
+							</button>
+						</a>
+					</div>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -50,6 +54,10 @@ const portfolio = () => {
 						<p className="text-center text-xl font-bold">Tech Stack</p>
 
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 auto-rows-min">
+							<p className="py-2 flex items-center">
+								<GiShirtButton className="pr-2 w-8" />
+								Javascript
+							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
 								React.js

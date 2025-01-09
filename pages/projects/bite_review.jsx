@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import naccImg from "../../public/assets/nacc_project.png";
+import biteReviewImg from "../../public/assets/bite_review_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
-const dementia_mortality_prediction = () => {
+const bite_review = () => {
 	return (
 		<div className="w-full">
 			<div className="w-screen top-[80px] h-[40vh] relative">
@@ -13,90 +13,81 @@ const dementia_mortality_prediction = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={naccImg}
+					src={biteReviewImg}
 					alt="Clustermap and SHAP beeswarm plots"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-					<h2 className="py-2">
-						Machine Learning Models Identify Predictive Features of Patient
-						Mortality across Dementia Types
-					</h2>
-					<h3>Research (ML)</h3>
+					<h2 className="py-2">BiteReview</h2>
+					<h3>Software</h3>
 				</div>
 			</div>
 
 			<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-28">
 				<div className="col-span-10 md:col-span-7">
-					<h2>Abstract</h2>
-					<p className="mt-4 mb-2 font-semibold">Background</p>
-					<p>
-						Dementia care is challenging due to the divergent trajectories in
-						disease progression and outcomes. Predictive models are needed to
-						flag patients at risk of near-term mortality and identify factors
-						contributing to mortality risk across different dementia types.
+					<h2>Project Overview</h2>
+					<p className="mt-4">
+						BiteReview is a microservice-based, cloud-deployed web application
+						that allows Columbia University students to review the dishes served
+						at Columbia&apos;s dining halls. Users are able to search for
+						existing dishes, which contain a description of the dish, an average
+						rating, and individual reviews and images left by other users. Users
+						are also able to create reviews for an existing dish and/or create a
+						new dish, with the option of leaving a rating, writing comments, and
+						attaching an image of the dish.
 					</p>
-					<p className="mt-4 mb-2 font-semibold">Methods</p>
-					<p>
-						Here, we developed machine-learning models predicting dementia
-						patient mortality at four different survival thresholds using a
-						dataset of 45,275 unique participants and 163,782 visit records from
-						the U.S. National Alzheimer’s Coordinating Center (NACC). We built
-						multi-factorial XGBoost models using a small set of mortality
-						predictors and conducted stratified analyses with
-						dementiatype-specific models.
-					</p>
-					<p className="mt-4 mb-2 font-semibold">Results</p>
-					<p>
-						Our models achieved an area under the receiver operating
-						characteristic curve (AUC-ROC) of over 0.82 utilizing nine
-						parsimonious features for all 1-, 3-, 5-, and 10-year thresholds.
-						The trained models mainly consisted of dementia-related predictors
-						such as specific neuropsychological tests and were minimally
-						affected by other age-related causes of death, e.g., stroke and
-						cardiovascular conditions. Notably, stratified analyses revealed
-						shared and distinct predictors of mortality across eight dementia
-						types. Unsupervised clustering of mortality predictors grouped
-						vascular dementia with depression and Lewy body dementia with
-						frontotemporal lobar dementia.
-					</p>
-					<p className="mt-4 mb-2 font-semibold">Conclusions</p>
-					<p>
-						This study demonstrates the feasibility of flagging dementia
-						patients at risk of mortality for personalized clinical management.
-						Parsimonious machine-learning models can be used to predict dementia
-						patient mortality with a limited set of clinical features, and
-						dementiatype-specific models can be applied to heterogeneous
-						dementia patient populations.
+					<p className="mt-4">
+						Our three atomic microservices ((1) dish management service, (2)
+						review and rating service, and (3) image management service) and one
+						composite service are all RESTful APIs built in Flask (Python),
+						connected to their own MySQL database inside of an Amazon RDS
+						instance, and deployed to Amazon EC2, AWS Elastic Beanstalk, or
+						Google Compute Engine. We built our frontend application in React.js
+						and Next.js, with Mantine as our component library, and we deployed
+						the frontend to an Amazon S3 bucket. We used Google OAuth 2.0 for
+						authentication, Amazon API Gateway for request routing, GitHub
+						Actions for CI/CD, and Docker for containerization. This project was
+						the final project for Professor Donald Ferguson&apos;s Cloud
+						Computing (COMS W4153) course at Columbia University.
 					</p>
 
 					{/* Links */}
 					<div className="my-7">
 						<a
-							href="https://github.com/Huang-lab/dementia-survival-prediction"
+							href="https://github.com/bh2779/4153-ui"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-								Code
+								Code (Frontend)
 							</button>
 						</a>
 						<a
-							href="https://www.nature.com/articles/s43856-024-00437-7"
+							href="https://github.com/jimmyzhang2003/4153-dish-management-service"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-								Publication
+								Code (Dish Management Service)
 							</button>
 						</a>
 						<a
-							href="https://labs.icahn.mssm.edu/kuanhuanglab/"
+							href="https://github.com/bh2779/4153-review-rating-service"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code (Review and Rating Service)
+							</button>
+						</a>
+
+						<a
+							href="https://github.com/AaryaA31/4153-Image-Management-Service"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-								Lab Website
+								Code (Image Management Service)
 							</button>
 						</a>
 					</div>
@@ -108,48 +99,49 @@ const dementia_mortality_prediction = () => {
 
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 auto-rows-min">
 							<p className="py-2 flex items-center">
-								<GiShirtButton className="pr-2 w-8" />R
-							</p>
-							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
 								Python
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								tidyverse
+								Javascript
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								XGBoost
+								Flask
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								scikit-learn
+								React.js
+							</p>
+							<p className="py-2 flex items-center">
+								<GiShirtButton className="pr-2 w-8" />
+								Next.js
 							</p>
 
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								numpy
+								Mantine
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								pandas
+								MySQL
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								matplotlib
+								Docker
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								seaborn
+								Amazon Web Services (AWS)
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								shap
+								GitHub Actions
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Google Colaboratory
+								Google OAuth 2.0
 							</p>
 						</div>
 					</div>
@@ -165,4 +157,4 @@ const dementia_mortality_prediction = () => {
 	);
 };
 
-export default dementia_mortality_prediction;
+export default bite_review;

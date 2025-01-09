@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import ProjectItem from "./ProjectItem";
+import biteReviewImg from "../public/assets/bite_review_project.png";
 import covidImg from "../public/assets/covid_project.png";
 import cdiffImg from "../public/assets/cdiff_project.svg";
 import naccImg from "../public/assets/nacc_project.png";
@@ -20,12 +19,19 @@ const Projects = (props, ref) => {
 
 				<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
 					<ProjectItem
+						title="BiteReview"
+						subtitle="Software"
+						backgroundImg={biteReviewImg}
+						projectUrl="/projects/bite_review"
+					/>
+
+					<ProjectItem
 						title="Dementia Patient Mortality Prediction"
 						subtitle="Research (ML)"
 						backgroundImg={naccImg}
 						projectUrl="/projects/dementia_mortality_prediction"
-                    />
-                    
+					/>
+
 					<ProjectItem
 						title="COVID-19 Diagnosis Prediction"
 						subtitle="Research (ML)"

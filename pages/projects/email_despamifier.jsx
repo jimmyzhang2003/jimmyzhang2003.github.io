@@ -55,29 +55,33 @@ const email_despamifier = () => {
 						internship experience as a whole, please check out the Medium
 						article I wrote at the conclusion of the internship.
 					</p>
-					<a
-						href="https://github.com/Inigo42/college-email-despamifier-backend"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a
-						href="https://medium.com/ai-camp/interns-or-entrepreneurs-how-ai-camp-redefined-the-tech-internship-4988c366625e"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Medium Article
-						</button>
-					</a>
-					<a href="https://www.ai-camp.org/" target="_blank" rel="noreferrer">
-						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							AI Camp Website
-						</button>
-					</a>
+
+					{/* Links */}
+					<div className="my-7">
+						<a
+							href="https://github.com/Inigo42/college-email-despamifier-backend"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code
+							</button>
+						</a>
+						<a
+							href="https://medium.com/ai-camp/interns-or-entrepreneurs-how-ai-camp-redefined-the-tech-internship-4988c366625e"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Medium Article
+							</button>
+						</a>
+						<a href="https://www.ai-camp.org/" target="_blank" rel="noreferrer">
+							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
+								AI Camp Website
+							</button>
+						</a>
+					</div>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">
