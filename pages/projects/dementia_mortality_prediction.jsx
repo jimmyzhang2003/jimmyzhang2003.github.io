@@ -22,7 +22,7 @@ const dementia_mortality_prediction = () => {
 						Machine Learning Models Identify Predictive Features of Patient
 						Mortality across Dementia Types
 					</h2>
-					<h3>Research (ML)</h3>
+					<h3>Research (Machine Learning)</h3>
 				</div>
 			</div>
 

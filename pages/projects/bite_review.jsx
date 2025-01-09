@@ -47,8 +47,8 @@ const bite_review = () => {
 						the frontend to an Amazon S3 bucket. We used Google OAuth 2.0 for
 						authentication, Amazon API Gateway for request routing, GitHub
 						Actions for CI/CD, and Docker for containerization. This project was
-						the final project for Professor Donald Ferguson&apos;s Cloud
-						Computing (COMS W4153) course at Columbia University.
+						my group&apos;s final project for Professor Donald Ferguson&apos;s
+						Cloud Computing (COMS W4153) course at Columbia University.
 					</p>
 
 					{/* Links */}

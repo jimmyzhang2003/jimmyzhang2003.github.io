@@ -37,9 +37,9 @@ const note_keeper = () => {
 					<p className="mt-4">
 						Currently, both the client and server are deployed using Vercel. To
 						note, Vercel automatically converts the Express routes in the
-						backend into serverless functions. This project was the final
-						project for Professor Shoaib Ahamed&apos;s Full-Stack Web
-						Development (COMS W3102) course at Columbia University.
+						backend into serverless functions. This project was my final project
+						for Professor Shoaib Ahamed&apos;s Full-Stack Web Development (COMS
+						W3102) course at Columbia University.
 					</p>
 
 					{/* Links */}
