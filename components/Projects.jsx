@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import biteReviewImg from "../public/assets/bite_review_project.png";
+import noteKeeperImg from "../public/assets/note_keeper_project.png";
 import covidImg from "../public/assets/covid_project.png";
 import cdiffImg from "../public/assets/cdiff_project.svg";
 import naccImg from "../public/assets/nacc_project.png";
@@ -23,6 +24,13 @@ const Projects = (props, ref) => {
 						subtitle="Software"
 						backgroundImg={biteReviewImg}
 						projectUrl="/projects/bite_review"
+					/>
+
+					<ProjectItem
+						title="Note Keeper"
+						subtitle="Software"
+						backgroundImg={noteKeeperImg}
+						projectUrl="/projects/note_keeper"
 					/>
 
 					<ProjectItem

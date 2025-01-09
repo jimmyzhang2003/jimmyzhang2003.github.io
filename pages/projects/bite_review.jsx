@@ -14,7 +14,7 @@ const bite_review = () => {
 					layout="fill"
 					objectFit="cover"
 					src={biteReviewImg}
-					alt="Clustermap and SHAP beeswarm plots"
+					alt="Review page for JJ's chicken wings"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
