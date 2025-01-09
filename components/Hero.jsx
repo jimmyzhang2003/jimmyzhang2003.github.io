@@ -20,9 +20,9 @@ const Hero = (props, ref) => {
 						Computer Science Student
 					</p>
 					<h1 className="py-2 px-3">
-						Hi there, I&apos;m <span className="text-[#b903de]">Jimmy</span>
+						Hi, I&apos;m <span className="text-[#b903de]">Jimmy</span>
 					</h1>
-					<div className="flex items-center justify-between max-w-[350px] m-auto py-4">
+					<div className="flex items-center justify-between min-w-[300px] max-w-[350px] m-auto py-4">
 						<a
 							href="https://www.linkedin.com/in/jimmy-zhang-5291781b4/"
 							target="_blank"
@@ -61,8 +61,8 @@ const Hero = (props, ref) => {
 					<Image
 						src="/assets/jimmy_photo.jpeg"
 						alt="Picture of Jimmy"
-						width="450px"
-						height="450px"
+						width="450"
+						height="450"
 						className="rounded-full"
 					/>
 				</div>

@@ -63,15 +63,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 
 	return (
 		<div>
-			{/*
-			<p className="fixed top-20 left-0">{scrollPosition}</p>
-			<p className="fixed top-20 left-20"> {Math.abs(hero.current?.offsetTop - scrollPosition)} </p>
-			<p className="fixed top-20 left-36"> {Math.abs(about.current?.offsetTop - scrollPosition)} </p> 
-            */}
-			<ul className="hidden fixed xl:flex flex-col left-0 top-48 px-8 z-[100]">
-				{/*<li>
-					<p>{selected}</p>
-                </li>*/}
+			<ul className="hidden fixed xl:flex flex-col left-0 top-48 pl-8">
 				<li className="flex items-center cursor-default">
 					<Link href="/">
 						<div
@@ -90,7 +82,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 							className={
 								homeHover
 									? "px-2 py-1 text-lg bg-indigo-500 rounded-md"
-									: "px-2 py-1 rounded-md opacity-0"
+									: "px-2 py-1 rounded-md hidden pointer-events-none"
 							}
 						>
 							Home
@@ -115,7 +107,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 							className={
 								aboutHover
 									? "px-2 py-1 text-lg bg-indigo-500 rounded-md"
-									: "px-2 py-1 rounded-md opacity-0"
+									: "px-2 py-1 rounded-md hidden pointer-events-none"
 							}
 						>
 							About Me
@@ -140,7 +132,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 							className={
 								projectsHover
 									? "px-2 text-lg py-1 bg-indigo-500 rounded-md"
-									: "px-2 py-1 rounded-md opacity-0"
+									: "px-2 py-1 rounded-md hidden pointer-events-none"
 							}
 						>
 							Projects
@@ -165,7 +157,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 							className={
 								contactHover
 									? "px-2 py-1 text-lg bg-indigo-500 rounded-md"
-									: "px-2 py-1 rounded-md opacity-0"
+									: "px-2 py-1 rounded-md hidden pointer-events-none"
 							}
 						>
 							Contact

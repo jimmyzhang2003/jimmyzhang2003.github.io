@@ -15,8 +15,8 @@ const Contact = (props, ref) => {
 								<Image
 									src="/assets/paper_airplane.jpg"
 									alt="Photo of paper airplane by Daria Nepriakhina on Unsplash"
-									width="450px"
-									height="300px"
+									width="450"
+									height="300"
 									className="rounded-xl z-[-1]"
 								></Image>
 							</div>
@@ -24,14 +24,9 @@ const Contact = (props, ref) => {
 								<h2>Jimmy Zhang</h2>
 								<br />
 								<p>
-									I am currently a full-time student, but I can <em>almost </em>
-									always find time for some awesome research and software
-									projects.
-								</p>
-								<br />
-								<p>
 									If you have any questions or just want to get in touch with
-									me, feel free to shoot me an email or connect with me.
+									me, feel free to contact me via this form or connect with me
+									on LinkedIn.
 								</p>
 							</div>
 						</div>

@@ -71,7 +71,7 @@ const antibiotic_risk_cdiff = () => {
 						</button>
 					</a>
 					<a
-						href="https://journals.asm.org/doi/10.1128/aac.01129-22#T2F1"
+						href="https://journals.asm.org/doi/10.1128/aac.01129-22"
 						target="_blank"
 						rel="noreferrer"
 					>
