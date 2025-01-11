@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import portfolioImg from "../../public/assets/portfolio_project.png";
+import noteKeeperImg from "../../public/assets/note_keeper_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
-const portfolio = () => {
+const note_keeper = () => {
 	return (
 		<div className="w-full">
 			<div className="w-screen top-[80px] h-[40vh] relative">
@@ -13,13 +13,13 @@ const portfolio = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={portfolioImg}
-					alt="Portfolio screenshot"
+					src={noteKeeperImg}
+					alt="Note Keeper home page"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-					<h2 className="py-2">Personal Portfolio</h2>
-					<h3>Website</h3>
+					<h2 className="py-2">Note Keeper</h2>
+					<h3>Software</h3>
 				</div>
 			</div>
 
@@ -27,13 +27,25 @@ const portfolio = () => {
 				<div className="col-span-10 md:col-span-7">
 					<h2>Project Overview</h2>
 					<p className="mt-4">
-						This website! A snapshot of my work, goals, and personal life.
+						Note Keeper is a web application that allows users to create, save,
+						edit, and delete notes in a similar manner to Google Keep. Notes are
+						retained between refreshes, but since authentication has not been
+						implemented, all users share a single set of notes. This app uses
+						the MERN stack (MongoDB, Express, React, Node).
+					</p>
+
+					<p className="mt-4">
+						Currently, both the client and server are deployed using Vercel. To
+						note, Vercel automatically converts the Express routes in the
+						backend into serverless functions. This project was my final project
+						for Professor Shoaib Ahamed&apos;s Full-Stack Web Development (COMS
+						W3102) course at Columbia University.
 					</p>
 
 					{/* Links */}
 					<div className="my-7">
 						<a
-							href="https://github.com/jimmyzhang2003/jimmyzhang2003.github.io"
+							href="https://github.com/jimmyzhang2003/coms-3102-final-project"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -41,8 +53,12 @@ const portfolio = () => {
 								Code
 							</button>
 						</a>
-						<a href="https://zhangjimmy.com" target="_blank" rel="noreferrer">
-							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
+						<a
+							href="https://coms-3102-final-project-client.vercel.app/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 								Website
 							</button>
 						</a>
@@ -60,16 +76,21 @@ const portfolio = () => {
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
+								Node.js
+							</p>
+							<p className="py-2 flex items-center">
+								<GiShirtButton className="pr-2 w-8" />
 								React.js
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Next.js
+								Express.js
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Tailwind CSS
+								MongoDB
 							</p>
+
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
 								Vercel
@@ -88,4 +109,4 @@ const portfolio = () => {
 	);
 };
 
-export default portfolio;
+export default note_keeper;

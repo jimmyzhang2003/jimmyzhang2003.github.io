@@ -61,35 +61,27 @@ const antibiotic_risk_cdiff = () => {
 						selection and future stewardship efforts.
 					</p>
 
-					<a
-						href="https://github.com/jimmyzhang2003/antibiotics-cdi-risk"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a
-						href="https://journals.asm.org/doi/10.1128/aac.01129-22#T2F1"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Publication
-						</button>
-					</a>
-
-					{/*
-					<a
-						href="https://www.nature.com/articles/s41598-021-93126-7"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Publication
-						</button>
-                    </a>*/}
+					{/* Links */}
+					<div className="my-7">
+						<a
+							href="https://github.com/jimmyzhang2003/antibiotics-cdi-risk"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code
+							</button>
+						</a>
+						<a
+							href="https://journals.asm.org/doi/10.1128/aac.01129-22"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Publication
+							</button>
+						</a>
+					</div>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">

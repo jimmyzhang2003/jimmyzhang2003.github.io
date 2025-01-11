@@ -22,21 +22,21 @@ const dementia_mortality_prediction = () => {
 						Machine Learning Models Identify Predictive Features of Patient
 						Mortality across Dementia Types
 					</h2>
-					<h3>Research (ML)</h3>
+					<h3>Research (Machine Learning)</h3>
 				</div>
 			</div>
 
 			<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-10 gap-8 pt-28">
 				<div className="col-span-10 md:col-span-7">
 					<h2>Abstract</h2>
-					<p className="mt-4 mb-2 font-black">Background</p>
+					<p className="mt-4 mb-2 font-semibold">Background</p>
 					<p>
 						Dementia care is challenging due to the divergent trajectories in
 						disease progression and outcomes. Predictive models are needed to
 						flag patients at risk of near-term mortality and identify factors
 						contributing to mortality risk across different dementia types.
 					</p>
-					<p className="mt-4 mb-2 font-black">Methods</p>
+					<p className="mt-4 mb-2 font-semibold">Methods</p>
 					<p>
 						Here, we developed machine-learning models predicting dementia
 						patient mortality at four different survival thresholds using a
@@ -46,7 +46,7 @@ const dementia_mortality_prediction = () => {
 						predictors and conducted stratified analyses with
 						dementiatype-specific models.
 					</p>
-					<p className="mt-4 mb-2 font-black">Results</p>
+					<p className="mt-4 mb-2 font-semibold">Results</p>
 					<p>
 						Our models achieved an area under the receiver operating
 						characteristic curve (AUC-ROC) of over 0.82 utilizing nine
@@ -60,7 +60,7 @@ const dementia_mortality_prediction = () => {
 						vascular dementia with depression and Lewy body dementia with
 						frontotemporal lobar dementia.
 					</p>
-					<p className="mt-4 mb-2 font-black">Conclusions</p>
+					<p className="mt-4 mb-2 font-semibold">Conclusions</p>
 					<p>
 						This study demonstrates the feasibility of flagging dementia
 						patients at risk of mortality for personalized clinical management.
@@ -70,33 +70,36 @@ const dementia_mortality_prediction = () => {
 						dementia patient populations.
 					</p>
 
-					<a
-						href="https://github.com/Huang-lab/dementia-survival-prediction"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a
-						href="https://www.nature.com/articles/s43856-024-00437-7"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Publication
-						</button>
-					</a>
-					<a
-						href="https://labs.icahn.mssm.edu/kuanhuanglab/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							Lab Website
-						</button>
-					</a>
+					{/* Links */}
+					<div className="my-7">
+						<a
+							href="https://github.com/Huang-lab/dementia-survival-prediction"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code
+							</button>
+						</a>
+						<a
+							href="https://www.nature.com/articles/s43856-024-00437-7"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Publication
+							</button>
+						</a>
+						<a
+							href="https://labs.icahn.mssm.edu/kuanhuanglab/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
+								Lab Website
+							</button>
+						</a>
+					</div>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">

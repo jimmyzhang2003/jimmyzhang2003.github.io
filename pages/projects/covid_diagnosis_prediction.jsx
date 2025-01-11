@@ -22,7 +22,7 @@ const covid_diagnosis_prediction = () => {
 						Prediction of Individual COVID-19 Diagnosis Using Baseline
 						Demographics and Lab Data
 					</h2>
-					<h3>Research (ML)</h3>
+					<h3>Research (Machine Learning)</h3>
 				</div>
 			</div>
 
@@ -50,33 +50,37 @@ const covid_diagnosis_prediction = () => {
 						complement existing tests to enhance screening and pandemic
 						containment workflows.
 					</p>
-					<a
-						href="https://github.com/Huang-lab/covid19-diagnosis-prediction"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Code
-						</button>
-					</a>
-					<a
-						href="https://www.nature.com/articles/s41598-021-93126-7"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
-							Publication
-						</button>
-					</a>
-					<a
-						href="https://labs.icahn.mssm.edu/kuanhuanglab/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-							Lab Website
-						</button>
-					</a>
+
+					{/* Links */}
+					<div className="my-7">
+						<a
+							href="https://github.com/Huang-lab/covid19-diagnosis-prediction"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Code
+							</button>
+						</a>
+						<a
+							href="https://www.nature.com/articles/s41598-021-93126-7"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
+								Publication
+							</button>
+						</a>
+						<a
+							href="https://labs.icahn.mssm.edu/kuanhuanglab/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
+								Lab Website
+							</button>
+						</a>
+					</div>
 				</div>
 
 				<div className="col-span-10 md:col-span-3 shadow-xl shadow-gray-400 rounded-xl p-4">

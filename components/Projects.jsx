@@ -1,7 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import ProjectItem from "./ProjectItem";
+import biteReviewImg from "../public/assets/bite_review_project.png";
+import noteKeeperImg from "../public/assets/note_keeper_project.png";
+import tttThinkerImg from "../public/assets/ttt_thinker_project.png";
+import phoneBookImg from "../public/assets/phone_book_project.png";
 import covidImg from "../public/assets/covid_project.png";
 import cdiffImg from "../public/assets/cdiff_project.svg";
 import naccImg from "../public/assets/nacc_project.png";
@@ -20,12 +22,40 @@ const Projects = (props, ref) => {
 
 				<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
 					<ProjectItem
+						title="BiteReview"
+						subtitle="Software"
+						backgroundImg={biteReviewImg}
+						projectUrl="/projects/bite_review"
+					/>
+
+					<ProjectItem
+						title="Note Keeper"
+						subtitle="Software"
+						backgroundImg={noteKeeperImg}
+						projectUrl="/projects/note_keeper"
+					/>
+
+					<ProjectItem
 						title="Dementia Patient Mortality Prediction"
 						subtitle="Research (ML)"
 						backgroundImg={naccImg}
 						projectUrl="/projects/dementia_mortality_prediction"
-                    />
-                    
+					/>
+
+					<ProjectItem
+						title="5T: fine-Tuned Tic-Tac-Toe Thinker"
+						subtitle="Machine Learning"
+						backgroundImg={tttThinkerImg}
+						projectUrl="/projects/ttt_thinker"
+					/>
+
+					<ProjectItem
+						title="Phone Book"
+						subtitle="Software"
+						backgroundImg={phoneBookImg}
+						projectUrl="/projects/phone_book"
+					/>
+
 					<ProjectItem
 						title="COVID-19 Diagnosis Prediction"
 						subtitle="Research (ML)"

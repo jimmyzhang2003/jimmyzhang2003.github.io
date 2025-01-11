@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import portfolioImg from "../../public/assets/portfolio_project.png";
+import phoneBookImg from "../../public/assets/phone_book_project.png";
 import { GiShirtButton } from "react-icons/gi";
 
-const portfolio = () => {
+const phone_book = () => {
 	return (
 		<div className="w-full">
 			<div className="w-screen top-[80px] h-[40vh] relative">
@@ -13,13 +13,13 @@ const portfolio = () => {
 					className="absolute z-1"
 					layout="fill"
 					objectFit="cover"
-					src={portfolioImg}
-					alt="Portfolio screenshot"
+					src={phoneBookImg}
+					alt="Note Keeper home page"
 				/>
 
 				<div className="absolute top-[55%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white">
-					<h2 className="py-2">Personal Portfolio</h2>
-					<h3>Website</h3>
+					<h2 className="py-2">Phone Book</h2>
+					<h3>Software</h3>
 				</div>
 			</div>
 
@@ -27,23 +27,25 @@ const portfolio = () => {
 				<div className="col-span-10 md:col-span-7">
 					<h2>Project Overview</h2>
 					<p className="mt-4">
-						This website! A snapshot of my work, goals, and personal life.
+						Phone Book is an iOS application with 5 screens that allows users to
+						create, edit, and delete contacts, as well as simulate chatting with
+						and retrieving mocked grocery lists for individual contacts. I built
+						the client/frontend application in SwiftUI and ran it on an iPhone
+						simulator in Xcode. I built the server/backend application in Java
+						using gRPC as the communication protocol. I used unary RPCs for the
+						CRUD operations performed on contacts and streaming RPCs for the
+						mocked chats and grocery lists.
 					</p>
 
 					{/* Links */}
 					<div className="my-7">
 						<a
-							href="https://github.com/jimmyzhang2003/jimmyzhang2003.github.io"
+							href="https://github.com/jimmyzhang2003/grpc-phone-book-app"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<button className="px-6 py-2 mt-4 mr-8 text-xl hover:scale-105 ease-in duration-300">
 								Code
-							</button>
-						</a>
-						<a href="https://zhangjimmy.com" target="_blank" rel="noreferrer">
-							<button className="px-6 py-2 mt-4 text-xl hover:scale-105 ease-in duration-300">
-								Website
 							</button>
 						</a>
 					</div>
@@ -56,23 +58,28 @@ const portfolio = () => {
 						<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 auto-rows-min">
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Javascript
+								Swift
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								React.js
+								Java
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Next.js
+								SwiftUI
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Tailwind CSS
+								Gradle
 							</p>
 							<p className="py-2 flex items-center">
 								<GiShirtButton className="pr-2 w-8" />
-								Vercel
+								gRPC
+							</p>
+
+							<p className="py-2 flex items-center">
+								<GiShirtButton className="pr-2 w-8" />
+								Xcode
 							</p>
 						</div>
 					</div>
@@ -88,4 +95,4 @@ const portfolio = () => {
 	);
 };
 
-export default portfolio;
+export default phone_book;

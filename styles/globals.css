@@ -1,24 +1,25 @@
+/* Import Tailwind base, components, and utilities */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Font-face declaration for custom font */
 @font-face {
 	font-family: "Poppins";
-	src: url("/fonts/Poppins-Regular.ttf");
+	src: url("/fonts/Poppins-Regular.ttf") format("truetype");
 }
 
+/* Base layer for global styles */
 @layer base {
 	html {
-		font-family: Poppins, sans-serif;
+		font-family: "Poppins", sans-serif;
 		scroll-behavior: smooth;
 	}
 
-	/*
 	body {
-		@apply bg-[#f0f3f5] text-[#1a2431] tracking-wide;
-	}
-    */
-	body {
+		/* Add background and text colors if needed, uncomment the lines below */
+		/* @apply bg-gray-100 text-gray-800; */
 		@apply tracking-wide;
 	}
 
@@ -28,7 +29,7 @@
 	h4,
 	h5,
 	h6 {
-		@apply font-bold;
+		@apply font-semibold;
 	}
 
 	h1 {
@@ -44,6 +45,6 @@
 	}
 
 	button {
-		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff];
+		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-blue-600 to-blue-400;
 	}
 }
