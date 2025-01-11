@@ -33,7 +33,7 @@ const About = (props, ref) => {
 						freshman year of college, I conducted an epidemiological research
 						study with Dr. Daniel Freedberg as a DSI Scholar at the{" "}
 						<b>Columbia University Data Science Institute</b>, identifying which
-						antibiotic classes confer the greatest risk of community-acquired{" "}
+						antibiotic classes confer the greatest risk for community-acquired{" "}
 						<em>C. difficile</em> infection.
 					</p>
 					<br />
