@@ -4,24 +4,42 @@ import Link from "next/link";
 const Sidebar = ({ hero, about, projects, contact }) => {
 	// color in the appropriate button based on the current page position
 	const [selected, setSelected] = useState("Home");
-	const [heroPosition, setHeroPosition] = useState(hero.current?.offSetTop);
-	const [aboutPosition, setAboutPosition] = useState(about.current?.offSetTop);
+	// set each section's position to be 1/3 of the way down the section
+	// TODO: adjust as more projects are added
+	const [heroPosition, setHeroPosition] = useState(
+		hero.current?.offSetTop + hero.current?.getBoundingClientRect().height / 3
+	);
+	const [aboutPosition, setAboutPosition] = useState(
+		about.current?.offSetTop + about.current?.getBoundingClientRect().height / 3
+	);
 	const [projectsPosition, setProjectsPosition] = useState(
-		projects.current?.offSetTop
+		projects.current?.offSetTop +
+			projects.current?.getBoundingClientRect().height / 3
 	);
 	const [contactPosition, setContactPosition] = useState(
-		contact.current?.offSetTop
+		contact.current?.offSetTop +
+			contact.current?.getBoundingClientRect().height / 3
 	);
-	const [scrollPosition, setScrollPosition] = useState(0);
 
 	const handleScroll = () => {
 		const scrollPos = window.scrollY;
-		const heroPos = hero.current?.offsetTop - scrollPosition;
-		const aboutPos = about.current?.offsetTop - scrollPosition;
-		const projectsPos = projects.current?.offsetTop - scrollPosition;
-		const contactPos = contact.current?.offsetTop - scrollPosition;
+		const heroPos =
+			hero.current?.offsetTop +
+			hero.current?.getBoundingClientRect().height / 3 -
+			scrollPos;
+		const aboutPos =
+			about.current?.offsetTop +
+			about.current?.getBoundingClientRect().height / 3 -
+			scrollPos;
+		const projectsPos =
+			projects.current?.offsetTop +
+			projects.current?.getBoundingClientRect().height / 3 -
+			scrollPos;
+		const contactPos =
+			contact.current?.offsetTop +
+			contact.current?.getBoundingClientRect().height / 3 -
+			scrollPos;
 
-		setScrollPosition(scrollPos);
 		setHeroPosition(heroPos);
 		setAboutPosition(aboutPos);
 		setProjectsPosition(projectsPos);
@@ -63,7 +81,7 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 
 	return (
 		<div>
-			<ul className="hidden fixed xl:flex flex-col left-0 top-48 pl-8">
+			<ul className="hidden fixed xl:flex flex-col left-0 top-48 pl-8 z-[100]">
 				<li className="flex items-center cursor-default">
 					<Link href="/">
 						<div
