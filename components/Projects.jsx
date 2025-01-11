@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import biteReviewImg from "../public/assets/bite_review_project.png";
 import noteKeeperImg from "../public/assets/note_keeper_project.png";
 import tttThinkerImg from "../public/assets/ttt_thinker_project.png";
+import phoneBookImg from "../public/assets/phone_book_project.png";
 import covidImg from "../public/assets/covid_project.png";
 import cdiffImg from "../public/assets/cdiff_project.svg";
 import naccImg from "../public/assets/nacc_project.png";
@@ -46,6 +47,13 @@ const Projects = (props, ref) => {
 						subtitle="Machine Learning"
 						backgroundImg={tttThinkerImg}
 						projectUrl="/projects/ttt_thinker"
+					/>
+
+					<ProjectItem
+						title="Phone Book"
+						subtitle="Software"
+						backgroundImg={phoneBookImg}
+						projectUrl="/projects/phone_book"
 					/>
 
 					<ProjectItem
