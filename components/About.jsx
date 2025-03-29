@@ -49,10 +49,10 @@ const About = (props, ref) => {
 						(DAX) technology to reduce clinical burden. During the summer of my
 						junior year, I worked as a software engineering intern at <b>ICF</b>
 						, working on data pipelines for America’s HIV Epidemic Analysis
-						Dashboard (AHEAD) and a RAG chatbot. After graduating, I will be
-						joining <b>IXL Learning</b> as a full-time software engineer. Moving
-						forward, I hope to continue using software to bridge gaps in
-						healthcare, education, and beyond.
+						Dashboard (AHEAD) and a RAG chatbot. After graduating, I joined{" "}
+						<b>IXL Learning</b> as a full-time software engineer on the Backbone
+						team. Moving forward, I hope to continue using software to bridge
+						gaps in healthcare, education, and beyond.
 					</p>
 					<br />
 					<p>
