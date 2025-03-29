@@ -2,48 +2,12 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Sidebar = ({ hero, about, projects, contact }) => {
-	// color in the appropriate button based on the current page position
+	// scroll logic: set selected section to be the one upon which the current center of the screen falls
 	const [selected, setSelected] = useState("Home");
-	// set each section's position to be 1/3 of the way down the section
-	// TODO: adjust as more projects are added
-	const [heroPosition, setHeroPosition] = useState(
-		hero.current?.offSetTop + hero.current?.getBoundingClientRect().height / 3
-	);
-	const [aboutPosition, setAboutPosition] = useState(
-		about.current?.offSetTop + about.current?.getBoundingClientRect().height / 3
-	);
-	const [projectsPosition, setProjectsPosition] = useState(
-		projects.current?.offSetTop +
-			projects.current?.getBoundingClientRect().height / 3
-	);
-	const [contactPosition, setContactPosition] = useState(
-		contact.current?.offSetTop +
-			contact.current?.getBoundingClientRect().height / 3
-	);
+	const [scrollPosition, setScrollPosition] = useState(0);
 
 	const handleScroll = () => {
-		const scrollPos = window.scrollY;
-		const heroPos =
-			hero.current?.offsetTop +
-			hero.current?.getBoundingClientRect().height / 3 -
-			scrollPos;
-		const aboutPos =
-			about.current?.offsetTop +
-			about.current?.getBoundingClientRect().height / 3 -
-			scrollPos;
-		const projectsPos =
-			projects.current?.offsetTop +
-			projects.current?.getBoundingClientRect().height / 3 -
-			scrollPos;
-		const contactPos =
-			contact.current?.offsetTop +
-			contact.current?.getBoundingClientRect().height / 3 -
-			scrollPos;
-
-		setHeroPosition(heroPos);
-		setAboutPosition(aboutPos);
-		setProjectsPosition(projectsPos);
-		setContactPosition(contactPos);
+		setScrollPosition(window.scrollY + window.innerHeight / 2);
 	};
 
 	useEffect(() => {
@@ -54,24 +18,29 @@ const Sidebar = ({ hero, about, projects, contact }) => {
 		};
 	});
 
+	// determine which section is currently at the center of the screen by checking whether we have reached the bottom of a section
 	useEffect(() => {
-		const posList = [
-			heroPosition,
-			aboutPosition,
-			projectsPosition,
-			contactPosition,
-		].map((pos) => Math.abs(pos));
+		const heroBottom =
+			hero.current?.offsetTop + hero.current?.getBoundingClientRect().height;
+		const aboutBottom =
+			about.current?.offsetTop + about.current?.getBoundingClientRect().height;
+		const projectsBottom =
+			projects.current?.offsetTop +
+			projects.current?.getBoundingClientRect().height;
+		const contactBottom =
+			contact.current?.offsetTop +
+			contact.current?.getBoundingClientRect().height;
 
-		if (Math.min(...posList) === Math.abs(heroPosition)) {
+		if (scrollPosition <= heroBottom) {
 			setSelected("Home");
-		} else if (Math.min(...posList) === Math.abs(aboutPosition)) {
+		} else if (scrollPosition <= aboutBottom) {
 			setSelected("About Me");
-		} else if (Math.min(...posList) === Math.abs(projectsPosition)) {
+		} else if (scrollPosition <= projectsBottom) {
 			setSelected("Projects");
-		} else if (Math.min(...posList) === Math.abs(contactPosition)) {
+		} else if (scrollPosition <= contactBottom) {
 			setSelected("Contact");
 		}
-	}, [aboutPosition, heroPosition, projectsPosition, contactPosition]);
+	}, [about, contact, hero, projects, scrollPosition]);
 
 	// show section names upon hovering over the appropriate button
 	const [homeHover, setHomeHover] = useState(false);
